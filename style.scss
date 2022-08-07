@@ -1,15 +1,3 @@
-
-@font-face {
-  font-family: 'TT Lakes';
-  src: url('fonts/TTLakes-Bold.eot');
-  src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-      url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-      url('TTLakes-Bold.woff') format('woff'),
-      url('TTLakes-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
 $backgroundcolor: #F8F8F8;
 $titlecolor:#1B1C21;
 $buttoncolor: #7E7E82;
@@ -17,91 +5,244 @@ $greenbordercolor: #B8FFEC;
 $phonewidth: 767.95px;
 $tabletwidth: 1119.95px;
 
-.container{
-max-width: 1120px;
-margin:0 auto;
+body{
+  max-width: 100%;
+  margin:0 auto;}
 
-}
-
-
-
- @media(max-width:767.95px){
- 
   /* тут все логотипы  */
 
-.page-header{
+.page-header {
   display:flex;
-  justify-content:space-between;
+  justify-content:end;
   padding:15px;
   background-color: #FFFFFF;
   border-bottom: 2px solid #B8FFEC;
-  
 
-  .page-header__icon-menu{
-    position:relative;  
-  }
-  .page-header__logo{
-    position:relative;
-}
-  .page-header__divider{
-    position:relative;
-}
-  .page-header__tools{
-    position:relative;
-}
-  .page-header__search{
-    position:relative;
-}
-.page-header__icon-call{
-  display:none;
-}
-}
-
-/* заголовок  */
-.page-main{
-  display:flex;
-  flex-direction: row;
-  font-family: 'TT Lakes';
-  font-style: normal;
-  font-weight: 700;
-  
-  
-  .page-main__highlight{
-    display: inline-block;
-    order:-1;
-    margin-top: 24px;
+  &__justify-left{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    margin-right:auto;
   }
 
-  .page-main__title{
-    display:inline-block;
-    font-size: 28px;
-    padding-left:16px;
-    position: relative;
-    order:0;
-    margin-top: 24px;
+  &__icon-menu {
+    position:relative;
+    margin-right: 16px;
+  }
+  
+    &__icon-logo {
+      position:relative;
+      align-self:flex-start;
+      margin-right: 16px;
+    }
+  
+    &__icon-divider {
+      position:relative;
+      margin-right: 16px;}
+  
 
+
+      &__justify-right{
+        display:flex;
+        justify-content: space-around;
+      }
+
+    &__icon-tools {
+      position:relative;
+      margin-right: 16px;
+      order:4;}
+  
+    &__icon-search {
+      position:relative;
+      margin-right: 16px;
+      order:4;}
+
+    &__icon-call {
+      position:relative;
+      margin-right: 16px;
+      order:-1;}
+    
+    &__icon-chat {
+      position:relative;
+      margin-right: 16px;
+      order:0;}
+    
+    &__icon-profile {
+      position:relative;
+      margin-right: 16px;
+      order:2;}
+    
+    &__icon-divider2 {
+      position:relative;
+      margin-right: 16px;
+      order:3;}
 }
+  @media(max-width:$phonewidth){
 
+.page-header {
+  justify-content: space-around;
+  &__icon-call {
+    display:none;}
+
+  &__icon-chat {
+    display:none;}
+
+  &__icon-profile {
+    display:none;}
+
+  &__icon-divider2 {
+    display:none;}
+}
+  }
+
+  /* заголовок  */
+  .page-main {
+    display: flex;
+    flex-direction: column;
+
+
+		&__highlight {
+      display:flex;
+		}
+		&__title {
+      margin-left: 3%;
+      font-size: 28px;
+      margin-bottom: 5px;
+		}
+}
 
 /* кнопки */
-.page-main__buttons{
-  display: flex;
-  overflow: scroll;
-  scroll-behavior: none;
-  .page-main__button-1{
-  padding:8px 16px;
-  margin-left: 16px;
+.page-main {
+
+  &__buttons{
+    display: flex;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 3%;
+    margin-bottom: 5px;
+  }
+
+  &__button-1 {
+    width: 246px;
+    height:40px;
+    padding:8px 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #F8F8F8;
+  color:#7E7E82;
+  font-size: 16px;
+  margin-right: 16px;
+  }
+
+  &__button-1:hover {
+    width: 246px;
+    height:40px;
+    padding:8px 16px;
   border-radius: 5px;
   border: 2px #B8FFEC solid;
   background-color:#FFFFFF;
   color:#7E7E82;
-  font-family: 'TT Lakes';
+  font-size: 16px;
+  margin-right: 16px;
+  }
+
+  &__button-2 {
+    width: 246px;
+    height:40px;
+    padding:8px 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #F8F8F8;
+  color:#7E7E82;
+  font-size: 16px;
+  margin-right: 16px;
+  }
+
+  &__button-2:hover {
+    width: 246px;
+    height:40px;
+    padding:8px 16px;
+  border-radius: 5px;
+  border: 2px #B8FFEC solid;
+  background-color:#FFFFFF;
+  color:#7E7E82;
+  font-size: 16px;
+  margin-right: 16px;
+  }
+
+  &__button-3 {
+    width: 246px;
+    height:40px;
+    padding:8px 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #F8F8F8;
+  color:#7E7E82;
+  font-size: 16px;
+  margin-right: 16px;
+  }
+
+  &__button-3:hover {
+    width: 246px;
+    height:40px;
+    padding:8px 16px;
+  border-radius: 5px;
+  border: 2px #B8FFEC solid;
+  background-color:#FFFFFF;
+  color:#7E7E82;
+  font-size: 16px;
+  margin-right: 16px;
+  }
+
+  &__button-4 {
+    width: 246px;
+    height:40px;
+    padding:8px 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #F8F8F8;
+  color:#7E7E82;
+  font-size: 16px;
+  margin-right: 16px;
+  }
+
+  &__button-4:hover {
+    width: 246px;
+    height:40px;
+    padding:8px 16px;
+  border-radius: 5px;
+  border: 2px #B8FFEC solid;
+  background-color:#FFFFFF;
+  color:#7E7E82;
+  font-size: 16px;
+  margin-right: 16px;
+  }
+}
+
+@media(max-width:$phonewidth){
+
+  .page-main {
+  &__buttons{
+  display: flex;
+  overflow: scroll;
 }
 }
-  .page-main__text{
-    margin: 0 16px;
-    
 }
+
+/* текст */
+
+.main-information {
+  display:flex;
+  flex-direction: column;
+}
+.page-main {
+
+		&__text {
+    margin: 0 3%;
+    font-size: 14px;
+		}
+}
+
   .second-title{
     display:inline-block;
     margin-top: 16px;
@@ -112,5 +253,26 @@ margin:0 auto;
   .expand-svg{
     margin-left: 24px;
 }
+
+
+@media(min-width:$phonewidth) and (max-width:$tabletwidth){
+  .page-main{
+    margin-right: 15px;
+  }
+body{
+  max-width:100%;
 }
+.page-header{
+  width: 100%;
+}
+  .main-information{
+    display:flex;
+    flex: 50% 50%;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+  .img-styles1 {
+    width: 360px;
+  }
+  
 }
