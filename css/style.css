@@ -98,6 +98,9 @@ body {
   .page-header__icon-divider2 {
     display: none;
   }
+  .page-main__text768 {
+    display: none;
+  }
 }
 /* заголовок  */
 .page-main {
@@ -236,11 +239,12 @@ body {
   line-height: 18px;
   letter-spacing: 0.200000003px;
   text-align: left;
+  padding: 0;
 }
 
 .second-title {
   display: flex;
-  margin-top: 16px;
+  margin-top: 0;
   line-height: 24px;
   font-size: 16px;
   font-weight: 600;
@@ -264,9 +268,32 @@ body {
     display: flex;
     flex: 50% 50%;
     flex-direction: row;
-    margin-top: 30px;
+    margin: top 1px;
+  }
+  .text {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 24px;
+    font-size: 14px;
+    margin: 0 4%;
+    font-family: "TT Lakes";
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.200000003px;
+    text-align: left;
+  }
+  .page-main__text768 {
+    padding-left: 10px;
+  }
+  .second-title {
+    margin: 0;
   }
   .img-styles1 {
     width: 360px;
+  }
+}
+@media (min-width: 1120px) {
+  .page-header {
+    display: none;
   }
 }
