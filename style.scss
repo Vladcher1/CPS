@@ -5,9 +5,35 @@ $greenbordercolor: #B8FFEC;
 $phonewidth: 767.95px;
 $tabletwidth: 1119.95px;
 
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('TTLakes-Regular.eot');
+  src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+      url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/TTLakes-Regular.woff') format('woff'),
+      url('TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('TTLakes-Bold.eot');
+  src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+      url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/TTLakes-Bold.woff') format('woff'),
+      url('TTLakes-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body{
   max-width: 100%;
-  margin:0 auto;}
+  margin:0 auto;
+  font-family: 'TT Lakes';
+  
+  
+}
 
   /* тут все логотипы  */
 
@@ -99,27 +125,36 @@ body{
   .page-main {
     display: flex;
     flex-direction: column;
-
+    
 
 		&__highlight {
       display:flex;
+      align-items:flex-end;
 		}
 		&__title {
-      margin-left: 3%;
+    
+      margin-left: 4%;
       font-size: 28px;
-      margin-bottom: 5px;
+      margin-bottom: 0;
+      align-self:flex-end; 
 		}
+    &__title-icon{
+      align-self:flex-end;
+    }
 }
 
 /* кнопки */
 .page-main {
 
+ 
+
   &__buttons{
     display: flex;
     list-style: none;
     margin-left: 0;
-    padding-left: 3%;
+    padding-left: 4%;
     margin-bottom: 5px;
+    
   }
 
   &__button-1 {
@@ -132,6 +167,7 @@ body{
   color:#7E7E82;
   font-size: 16px;
   margin-right: 16px;
+  
   }
 
   &__button-1:hover {
@@ -238,20 +274,27 @@ body{
 .page-main {
 
 		&__text {
-    margin: 0 3%;
+    margin: 0 4%;
+    font-family:'TT Lakes';
     font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+
 		}
 }
 
   .second-title{
-    display:inline-block;
+    display:flex;
     margin-top: 16px;
     line-height: 24px;
     font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
 }
 
-  .expand-svg{
-    margin-left: 24px;
+  .second-title-icon{
+    display:inline;
 }
 
 

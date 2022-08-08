@@ -405,16 +405,9 @@
     font-style: italic;
 }
 
-@font-face {
-    font-family: 'TT Lakes';
-    src: url('TTLakes-Regular.eot');
-    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
-        url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-        url('TTLakes-Regular.woff') format('woff'),
-        url('TTLakes-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+
+
+
 
 @font-face {
     font-family: 'TT Lakes';

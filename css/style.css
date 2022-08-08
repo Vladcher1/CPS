@@ -1,7 +1,22 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "TT Lakes";
+  src: url("TTLakes-Regular.eot");
+  src: local("TT Lakes Regular"), local("TTLakes-Regular"), url("TTLakes-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/TTLakes-Regular.woff") format("woff"), url("TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url("TTLakes-Bold.eot");
+  src: local("TT Lakes Bold"), local("TTLakes-Bold"), url("TTLakes-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/TTLakes-Bold.woff") format("woff"), url("TTLakes-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 body {
   max-width: 100%;
   margin: 0 auto;
+  font-family: "TT Lakes";
 }
 
 /* тут все логотипы  */
@@ -90,11 +105,16 @@ body {
 }
 .page-main__highlight {
   display: flex;
+  align-items: flex-end;
 }
 .page-main__title {
-  margin-left: 3%;
+  margin-left: 4%;
   font-size: 28px;
-  margin-bottom: 5px;
+  margin-bottom: 0;
+  align-self: flex-end;
+}
+.page-main__title-icon {
+  align-self: flex-end;
 }
 
 /* кнопки */
@@ -102,7 +122,7 @@ body {
   display: flex;
   list-style: none;
   margin-left: 0;
-  padding-left: 3%;
+  padding-left: 4%;
   margin-bottom: 5px;
 }
 .page-main__button-1 {
@@ -207,19 +227,25 @@ body {
 }
 
 .page-main__text {
-  margin: 0 3%;
+  margin: 0 4%;
+  font-family: "TT Lakes";
   font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.200000003px;
+  text-align: left;
 }
 
 .second-title {
-  display: inline-block;
+  display: flex;
   margin-top: 16px;
   line-height: 24px;
   font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
 }
 
-.expand-svg {
-  margin-left: 24px;
+.second-title-icon {
+  display: inline;
 }
 
 @media (min-width: 767.95px) and (max-width: 1119.95px) {
