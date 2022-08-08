@@ -14,9 +14,9 @@
   font-style: normal;
 }
 body {
-  max-width: 100%;
   margin: 0 auto;
   font-family: "TT Lakes";
+  background-color: #F8F8F8;
 }
 
 /* тут все логотипы  */
@@ -81,6 +81,7 @@ body {
   order: 3;
 }
 
+/* пропадающие иконки при 320px  */
 @media (max-width: 767.95px) {
   .page-header {
     justify-content: space-around;
@@ -124,6 +125,7 @@ body {
   margin-left: 0;
   padding-left: 4%;
   margin-bottom: 5px;
+  overflow: hidden;
 }
 .page-main__button-1 {
   width: 246px;
@@ -214,10 +216,11 @@ body {
   margin-right: 16px;
 }
 
+/* отключение скролла в 320px  */
 @media (max-width: 767.95px) {
   .page-main__buttons {
     display: flex;
-    overflow: scroll;
+    overflow: hidden;
   }
 }
 /* текст */
@@ -248,15 +251,14 @@ body {
   display: inline;
 }
 
+/* 768px  */
 @media (min-width: 767.95px) and (max-width: 1119.95px) {
-  .page-main {
-    margin-right: 15px;
-  }
   body {
-    max-width: 100%;
+    margin-right: 16px;
+    background-color: #F8F8F8;
   }
   .page-header {
-    width: 100%;
+    padding: 24px;
   }
   .main-information {
     display: flex;

@@ -27,12 +27,14 @@ $tabletwidth: 1119.95px;
   font-style: normal;
 }
 
+
+
+
 body{
-  max-width: 100%;
+  
   margin:0 auto;
   font-family: 'TT Lakes';
-  
-  
+  background-color: #F8F8F8;
 }
 
   /* тут все логотипы  */
@@ -56,22 +58,21 @@ body{
     margin-right: 16px;
   }
   
-    &__icon-logo {
-      position:relative;
-      align-self:flex-start;
-      margin-right: 16px;
-    }
+  &__icon-logo {
+    position:relative;
+    align-self:flex-start;
+    margin-right: 16px;
+  }
   
-    &__icon-divider {
-      position:relative;
-      margin-right: 16px;}
+  &__icon-divider {
+    position:relative;
+    margin-right: 16px;}
   
 
-
-      &__justify-right{
-        display:flex;
-        justify-content: space-around;
-      }
+  &__justify-right{
+    display:flex;
+    justify-content: space-around;
+  }
 
     &__icon-tools {
       position:relative;
@@ -103,6 +104,9 @@ body{
       margin-right: 16px;
       order:3;}
 }
+
+
+/* пропадающие иконки при 320px  */
   @media(max-width:$phonewidth){
 
 .page-header {
@@ -121,66 +125,67 @@ body{
 }
   }
 
+
   /* заголовок  */
+
   .page-main {
     display: flex;
     flex-direction: column;
     
-
 		&__highlight {
       display:flex;
       align-items:flex-end;
 		}
+
 		&__title {
-    
       margin-left: 4%;
       font-size: 28px;
       margin-bottom: 0;
       align-self:flex-end; 
 		}
+
     &__title-icon{
       align-self:flex-end;
     }
 }
 
+
 /* кнопки */
+
 .page-main {
-
- 
-
   &__buttons{
     display: flex;
     list-style: none;
     margin-left: 0;
     padding-left: 4%;
     margin-bottom: 5px;
-    
+    overflow: hidden;
   }
 
-  &__button-1 {
-    width: 246px;
-    height:40px;
-    padding:8px 16px;
-  border-radius: 5px;
-  border: none;
-  background-color: #F8F8F8;
-  color:#7E7E82;
-  font-size: 16px;
-  margin-right: 16px;
+    &__button-1 {
+      width: 246px;
+      height:40px;
+      padding:8px 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F8F8F8;
+    color:#7E7E82;
+    font-size: 16px;
+    margin-right: 16px;
   
   }
 
-  &__button-1:hover {
-    width: 246px;
-    height:40px;
-    padding:8px 16px;
-  border-radius: 5px;
-  border: 2px #B8FFEC solid;
-  background-color:#FFFFFF;
-  color:#7E7E82;
-  font-size: 16px;
-  margin-right: 16px;
-  }
+      &__button-1:hover {
+        width: 246px;
+        height:40px;
+        padding:8px 16px;
+      border-radius: 5px;
+      border: 2px #B8FFEC solid;
+      background-color:#FFFFFF;
+      color:#7E7E82;
+      font-size: 16px;
+      margin-right: 16px;
+      }
 
   &__button-2 {
     width: 246px;
@@ -252,18 +257,22 @@ body{
   color:#7E7E82;
   font-size: 16px;
   margin-right: 16px;
+  
   }
 }
+
+/* отключение скролла в 320px  */
 
 @media(max-width:$phonewidth){
 
   .page-main {
-  &__buttons{
-  display: flex;
-  overflow: scroll;
+    &__buttons{
+    display: flex;
+    overflow: hidden;
 }
 }
 }
+
 
 /* текст */
 
@@ -280,7 +289,6 @@ body{
     line-height: 18px;
     letter-spacing: 0.20000000298023224px;
     text-align: left;
-
 		}
 }
 
@@ -297,17 +305,20 @@ body{
     display:inline;
 }
 
+/* 768px  */
 
 @media(min-width:$phonewidth) and (max-width:$tabletwidth){
-  .page-main{
-    margin-right: 15px;
-  }
+ 
 body{
-  max-width:100%;
+  margin-right: 16px;
+  background-color: #F8F8F8;
 }
 .page-header{
-  width: 100%;
-}
+  padding: 24px;
+  }
+    
+
+
   .main-information{
     display:flex;
     flex: 50% 50%;
@@ -317,5 +328,4 @@ body{
   .img-styles1 {
     width: 360px;
   }
-  
-}
+  }
