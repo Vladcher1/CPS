@@ -550,6 +550,44 @@ body {
 }
 
 @media (min-width: 1120px) {
+  .page-header {
+    background-color: #F8F8F8;
+    border: none;
+  }
+  .page-header__icon-search {
+    position: absolute;
+    top: 50px;
+    right: 253px;
+  }
+  .page-header__icon-tools {
+    position: absolute;
+    top: 50px;
+    right: 53px;
+  }
+  .page-header__icon-call {
+    display: none;
+  }
+  .page-header__icon-chat {
+    display: none;
+  }
+  .page-header__icon-divider {
+    display: none;
+  }
+  .page-header__icon-divider2 {
+    display: none;
+  }
+  .page-header__icon-logo {
+    display: none;
+  }
+  .page-header__icon-menu {
+    display: none;
+  }
+  .page-header__icon-profile {
+    display: none;
+  }
+  .page-main {
+    position: absolute;
+  }
   .page-main__buttons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -560,7 +598,7 @@ body {
     font-family: 'TT Lakes';
   }
   .page-main__highlight {
-    margin-top: 30px;
+    margin-top: 0;
   }
   .page-main__title {
     margin-left: 32px;

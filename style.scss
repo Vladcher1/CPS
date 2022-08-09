@@ -503,8 +503,55 @@ margin-bottom: 32px;
 
   @media(min-width:1120px){
   
-  
+  .page-header{
 
+    &__icon-search{
+      position:absolute;
+      top: 50px;
+      right:253px;
+
+    }
+
+    &__icon-tools{
+      position: absolute;
+      top: 50px;
+      right:53px;
+    }
+
+    &__icon-call{
+      display:none;
+    }
+
+    &__icon-chat{
+      display:none;
+    }
+
+    &__icon-divider{
+      display:none;
+    }
+
+    &__icon-divider2{
+      display:none;
+    }
+
+    &__icon-logo{
+      display:none;
+    }
+
+    &__icon-menu{
+      display:none;
+    }
+
+    &__icon-profile{
+      display:none;
+    }
+
+    background-color: #F8F8F8;
+    border:none;
+  }
+  .page-main{
+    position:absolute;
+  }
   .page-main__buttons{
     display:flex;
     flex-wrap: wrap;
@@ -512,7 +559,7 @@ margin-bottom: 32px;
     font-family: 'TT Lakes';
 }
     .page-main__highlight{
-      margin-top: 30px;
+      margin-top: 0;
     }
     .page-main__title{
       margin-left:32px;
