@@ -148,8 +148,12 @@ body {
     margin-left: 0;
     padding-left: 0;
     margin-bottom: 5px;
-    overflow: hidden;
+    overflow: scroll;
     margin: 8px 33px;
+  }
+
+  &__buttons::-webkit-scrollbar{
+    opacity: 1;
   }
 
   &__button-1 {
@@ -413,7 +417,7 @@ body {
 
   .page-main__buttons {
     display: flex;
-    overflow: hidden;
+  
 
     &__button-5 {
       display: none;
