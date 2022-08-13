@@ -5,7 +5,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "TT Lakes";
   src: url("TTLakes-Bold.eot");
@@ -13,7 +12,6 @@
   font-weight: bold;
   font-style: normal;
 }
-
 body {
   width: 320px;
   margin-left: auto;
@@ -22,24 +20,17 @@ body {
 }
 
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   padding-left: 24px;
   padding-right: 24px;
 }
-
 .page-header__icon-search {
   justify-self: flex-end;
 }
-
 .page-header__opened-menu {
   margin-right: 16px;
 }
-
 .page-header__logo {
   margin-right: 78px;
 }
