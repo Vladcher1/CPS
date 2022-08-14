@@ -109,7 +109,7 @@ button {
     &__icon-call {
       position: relative;
       margin-right: 16px;
-      order: -1;
+      order: -2;
       padding:0;
     }
 
@@ -163,11 +163,13 @@ button {
   &__buttons {
     display: flex;
     list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-    margin-bottom: 5px;
+    margin-left:0;
+    padding-left:0;
     overflow: scroll;
-    margin: 8px 33px;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-bottom: 0;
+
   }
 
   .button-style{
@@ -214,8 +216,7 @@ button {
 }
 .page-main {
   &__text {
-    margin: 0 4%;
-    font-family: "TT Lakes";
+    margin: 0;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.20000000298023224px;
@@ -225,6 +226,8 @@ button {
 
     .paragraph320 {
       margin-bottom: 0;
+      margin-top:16px;
+      margin-left:16px;
     }
   }
 }
@@ -236,10 +239,12 @@ button {
   font-size: 16px;
   font-weight: 500;
   margin-left: 10px;
+
 }
 
 .second-title-icon {
   display: inline;
+  align-self: center;
 }
 
 /* пропадающие иконки при 320px  и отключение скролла в 320px  */
@@ -297,14 +302,13 @@ button {
   }
 
   .page-header {
-    padding: 15px 15px 5px 15px;
+    padding: 14px;
 
-    .label1 {
-      padding: 0;
-    }
+ 
 
-    .label2 {
-      padding: 0;
+    &__icon-call{
+      order:-2;
+      margin-right: 10px;
     }
     &__icon-logo {
       order: 1;
@@ -315,12 +319,24 @@ button {
 
     &__icon-chat {
       order: -1;
+      margin-right: 10px;
     }
     &__icon-profile {
       order: -1;
+      margin-right: 10px;
     }
     &__icon-divider2 {
       order: -1;
+      margin-right: 10px;
+      align-self:center;
+    }
+
+    &__icon-tools{
+      margin-right: 10px;
+    }
+
+    &__icon-search{
+      margin-right: 10px;
     }
 
     &__icon-search-text {
@@ -333,27 +349,28 @@ button {
   }
 
   .page-main__buttons {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+    margin-left:24px;
   }
 
   .main-information {
     display: flex;
     flex: 50% 50%;
     flex-direction: row;
-    margin: top 1px;
+    
   }
   .text {
     display: flex;
     flex-wrap: wrap;
     margin-left: 0;
     font-size: 14px;
-    margin: 0 0%;
-    font-family: "TT Lakes";
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.20000000298023224px;
     text-align: left;
+    width: 450px;
+    margin-right: 48px;
 
+    .paragraph320{
+      margin:0;
+    }
     .second-paragraph768 {
       margin-bottom: 0;
     }
@@ -376,13 +393,15 @@ button {
   }
 
   .second-title-icon {
-    padding-top: 7px;
-    width: 35px;
-    height: 40px;
+    
+    width: 25px;
+    height: 30px;
+    align-self: center;
   }
 
   .img-styles1 {
     width: 360px;
+    border-radius: 2.5%;
   }
 }
 
@@ -406,6 +425,9 @@ button {
       position: relative;
       top: -15px;
       right: 8px;
+      font-size: 16px;
+      font-family: "TT Lakes";
+      font-weight: 500;
     }
 
     &__icon-tools {
@@ -418,6 +440,9 @@ button {
       position: relative;
       top: -15px;
       right: 8px;
+      font-size: 16px;
+      font-family: "TT Lakes";
+      font-weight: 500;
     }
 
     &__icon-call {
@@ -467,7 +492,13 @@ button {
       margin-top: 0;
     }
 
+    .second-title{
+      margin-left:0;
+      padding-left: 0;
+    }
+
     .text {
+      margin-right: 36px;
       .page-main__text {
         display: none;
       }
@@ -494,6 +525,7 @@ button {
         flex: 50%;
         width: 530px;
         margin-right: 30px;
+        border-radius: 2.5%;
       }
     }
   }
