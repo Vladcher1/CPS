@@ -20,119 +20,159 @@
   font-style: normal;
 }
 
+img:hover {
+  filter: grayscale(0.2);
+}
 body {
   width: 320px;
-  height: 1024;
+  height: 1024px;
   margin-right: auto;
   font-family: "TT Lakes";
   position: sticky;
   margin-left: 0;
   box-shadow: 10px 10px 30px 10px #0e185033;
-}
-/* шапка модалки */
-.modal-header {
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 24px;
-  padding-right: 24px;
-
-  &__icon-search {
-    justify-self: flex-end;
-    margin-top: 18px;
-    margin-right: 16px;
-  }
-
-  &__opened-menu {
-    margin-right: 16px;
-    margin-top: 18px;
-  }
-
-  &__logo {
-    margin-right: 78px;
-    margin-top: 18px;
-  }
-}
-
-/* меню модалки */
-.modal-main__headline {
-  display: flex;
-  margin-top: 40px;
-  .modal-main__headline-title {
-    margin-left: 20px;
-    font-size: 16px;
-    color: #7e7e82;
-    letter-spacing: -0.2px;
-    font-weight: normal;
-  }
-}
-
-/* кнопки модалки */
-
-ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-
+  display:flex;
   flex-direction: column;
-}
-.button-style {
-  font-family: "TT Lakes";
-  text-align: start;
-  display: block;
-  background-color: transparent;
-  border: none;
-  list-style-type: none;
-  padding: 5px;
-  margin-left: 20px;
-  font-size: 16px;
-  margin-bottom: 30px;
-}
 
-.button-style:first-child {
-  margin-top: 20px;
-}
 
-.button-style:hover {
-  transform: scale(1);
-  box-shadow: 5px -5px 5px -4px #41F6D7;
-  transition-duration: 0.2s;
-}
-
-/* подвал модалки */
-.modal-footer {
-  .modal-footer__buttons {
+  .link-style{
+    color:inherit;
+    text-decoration: none;
+  }
+  /* шапка модалки */
+  .modal-header {
     display: flex;
-    margin-top: 250px;
-    .button-footer-1 {
-      align-self: flex-start;
+    justify-content:space-between;
+    padding-top:20px;
+    padding-left: 24px;
+    padding-right:24px;
+
+    .link-style {
+      margin-top: 0;
+    }
+
+    .button-style {
+      width: 40px;
+      height: 40px;
       margin: 0;
-      margin-left: 24px;
+      padding: 0;
+      align-self: center;
+    }
+    .modal-header__opened-menu{
       margin-right: 16px;
     }
-    .button-footer-2 {
-      margin: 0;
-      margin-right: 16px;
+    .modal-header__icon-search {
+      display:flex;
+      justify-self: flex-end;
+  
     }
-    .button-footer-3 {
-      margin: 0;
+
+    .modal-header__logo {
+      margin-right: 65px;
+    }
+  }
+  /* меню модалки */
+  .modal-main__headline {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    .modal-main__headline-title {
+      margin-left: 20px;
+      font-size: 16px;
+      color: #7e7e82;
+      letter-spacing: -0.2px;
+      font-weight: normal;
+      font-style: normal;
     }
   }
 
-  .modal-footer__copy {
+  /* кнопки модалки */
+  .button-list {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    .email {
-      margin-top: 16px;
-      margin-left: 24px;
+    .button-style {
+      font-family: "TT Lakes";
+      text-align: start;
+      display: block;
+      background-color: transparent;
+      border: none;
+      list-style-type: none;
+      font-size: 16px;
+      margin-bottom: 30px;
+      margin-left:20px;
     }
-    .phone {
-      margin-top: 12px;
-      margin-left: 24px;
+  }
+  .button-style {
+    font-family: "TT Lakes";
+    text-align: start;
+    display: block;
+    background-color: transparent;
+    border: none;
+    list-style-type: none;
+    font-size: 16px;
+  }
+
+  .button-style:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    font-style: medium;
+  }
+
+  /* подвал модалки */
+  .modal-footer {
+    margin-top: auto;
+    margin-bottom: 0;
+    .modal-footer__buttons {
+      display: flex;
+      margin-bottom: 16px;
+
+      .button-footer-1 {
+        align-self: flex-start;
+        margin: 0;
+        margin-left: 24px;
+        margin-right: 16px;
+      }
+      .button-footer-2 {
+        margin: 0;
+        margin-right: 16px;
+      }
+      .button-footer-3 {
+        margin: 0;
+      }
     }
-    .lang {
-      margin-left: 24px;
-      margin-top: 40px;
-      margin-bottom: 24px;
+
+    .modal-footer__copy {
+      display: flex;
+      flex-direction: column;
+
+      .email{
+        margin-left: 24px;
+      }
+      .phone {
+        margin-top: 12px;
+        margin-left: 24px;
+        font-weight: bold;
+        font-size: 24px;
+      }
+      .lang {
+        margin-left: 24px;
+        margin-top: 40px;
+        margin-bottom: 24px;
+        display: flex;
+
+        .button-style {
+          margin: 0;
+          padding: 0;
+          margin-right: 7px;
+        }
+
+        .button-style:hover {
+          opacity: 0.5;
+        }
+      }
     }
   }
 }
