@@ -6,33 +6,40 @@
   <link rel="stylesheet" href="\css\style1.css" type="text/css">
 </head>
 <body>
-  <header class="page-header">
-    <img  class="page-header__opened-menu" src="\src\img\burger.svg">
-    <img class="page-header__logo" src="\src\img\Groupcps.svg">
-    <img class="page-header__icon-search" src="\src\img\checkstatusicon-search.svg">
+  <header class="modal-header">
+    <img  class="modal-header__opened-menu" src="\src\img\burger.svg">
+    <img class="modal-header__logo" src="\src\img\Groupcps.svg">
+    <img class="modal-header__icon-search" src="\src\img\checkstatusicon-search.svg">
   </header>
 
-  <main class="page-main">
-    <nav class="page-main__main-menu">
-      <h1>Ремонт техники</h1>
+  <main class="modal-main">
+    <nav class="modal-main__main-menu">
+      <div class="modal-main__headline">
+      <img class="modal-main__headline-icon"src="/src/img/highlight.svg">
+      <h1 class="modal-main__headline-title">Ремонт техники</h1>
+      </div>
       <ul>
-        <li>Услуги и сервисы</li>
-        <li>Корпоративным клиентам</li>
-        <li>Продавцам техники</li>
-        <li>Партнёрам</li>
-        <li>Производителям</li>
-        <li>Наши сервисные центры</li>
-        <li>Контакты</li>
+        <button class="button-1 button-style"><li>Услуги и сервисы</li></button>
+        <button class="button-2 button-style"><li>Корпоративным клиентам</li></button>
+        <button class="button-3 button-style"><li>Продавцам техники</li></button>
+        <button class="button-4 button-style"><li>Партнёрам</li></button>
+        <button class="button-5 button-style"><li>Производителям</li></button>
+        <button class="button-6 button-style"><li>Наши сервисные центры</li></button>
+        <button class="button-7 button-style"><li>Контакты</li></button>
       </ul>
     </nav>
   </main>
-  <footer class="page-footer">
-    <img src="\src\img\call.svg">
-    <img src="\src\img\chat.svg">
-    <img src="\src\img\profile.svg">
-    <span>mail@cps.com</span>
-    <span>8 800 890 8900</span>
-    <span>RU EN CH</span>
+  <footer class="modal-footer">
+    <div class="modal-footer__buttons">
+    <button class="button-style button-footer-1"><img src="\src\img\call.svg"></button>
+    <button class="button-style button-footer-2"><img src="\src\img\chat.svg"></button>
+    <button class="button-style button-footer-3"><img src="\src\img\profile.svg"></button>
+    </div>
+    <div class="modal-footer__copy">
+    <span class="email">mail@cps.com</span>
+    <span class="phone">8 800 890 8900</span>
+    <span class="lang">RU EN CH</span>
+    </div>
   </footer>
 </body>
 </html>
