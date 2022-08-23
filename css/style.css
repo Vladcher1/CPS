@@ -6,7 +6,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "TT Lakes";
   src: url("TTLakes-Bold.eot");
@@ -14,7 +13,6 @@
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: "TT Lakes";
   src: url("TTLakes-Medium.eot");
@@ -22,7 +20,6 @@
   font-weight: 500;
   font-style: normal;
 }
-
 /* тут все стили для боди  */
 body {
   margin: 0;
@@ -44,148 +41,93 @@ button {
   border-bottom: 2px solid #b8ffec;
   width: 100%;
 }
-
 .page-header__main-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .page-header__main-menu .page-header__justify-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   padding: 0;
 }
-
 .page-header__main-menu .page-header__justify-left .page-header__icon-menu {
   position: relative;
   margin-right: 16px;
   margin-left: 16px;
   padding: 0;
 }
-
 .page-header__main-menu .page-header__justify-left .page-header__icon-logo {
   position: relative;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   margin-right: 16px;
   padding: 0;
 }
-
 .page-header__main-menu .page-header__justify-left .page-header__icon-divider {
   position: relative;
   margin-right: 16px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   padding: 0;
 }
-
 .page-header__main-menu .page-header__justify-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-
 .page-header__main-menu__icon-tools {
   position: relative;
   margin-right: 16px;
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
+  order: 4;
   padding: 0;
 }
-
 .page-header__main-menu__icon-search {
   position: relative;
   margin-right: 16px;
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
+  order: 4;
   padding: 0;
 }
-
 .page-header__main-menu__icon-call {
   position: relative;
   margin-right: 16px;
-  -webkit-box-ordinal-group: -1;
-      -ms-flex-order: -2;
-          order: -2;
+  order: -2;
   padding: 0;
 }
-
 .page-header__main-menu__icon-chat {
   position: relative;
   margin-right: 16px;
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
+  order: 0;
 }
-
 .page-header__main-menu__icon-profile {
   position: relative;
   margin-right: 16px;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  order: 2;
 }
-
 .page-header__main-menu__icon-divider2 {
   position: relative;
   margin-right: 16px;
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  order: 3;
 }
 
 /* главный заголовок и его иконка */
 .page-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .page-main__highlight {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
 }
-
 .page-main__title {
   margin-left: 12px;
   font-size: 28px;
   margin-bottom: 0;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
-
 .page-main__title-icon {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 /* кнопки */
 .page-main__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin-left: 0;
@@ -195,7 +137,6 @@ button {
   margin-left: 16px;
   margin-bottom: 0;
 }
-
 .page-main .button-style {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -212,11 +153,9 @@ button {
   font-size: 16px;
   line-height: 24px;
 }
-
 .page-main__buttons::-webkit-scrollbar {
   width: 0;
 }
-
 .page-main .button-style:hover {
   border: 2px #b8ffec solid;
   background-color: #ffffff;
@@ -225,37 +164,28 @@ button {
 
 /* текст */
 .main-information {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .page-main__text {
   margin: 0;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0.20000000298023224px;
+  letter-spacing: 0.200000003px;
   text-align: left;
   padding: 0;
 }
-
 .page-main__text .paragraph320 {
   margin-bottom: 0;
   margin-top: 16px;
   margin-left: 16px;
 }
-
 .page-main__text .img-styles1 {
   width: 90%;
 }
 
 .second-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 0;
   line-height: 24px;
@@ -266,16 +196,13 @@ button {
 
 .second-title-icon {
   display: inline;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 /* пропадающие иконки при 320px  и отключение скролла в 320px  */
 @media (max-width: 767.95px) {
   .page-header {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   .page-header__icon-call {
     display: none;
@@ -302,15 +229,12 @@ button {
     display: none;
   }
   .page-main__buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .page-main__buttons__button-5 {
     display: none;
   }
 }
-
 /* 768px  на планшеты */
 @media (min-width: 767.95px) and (max-width: 1119.95px) {
   body {
@@ -321,41 +245,27 @@ button {
     padding: 14px;
   }
   .page-header__icon-call {
-    -webkit-box-ordinal-group: -1;
-        -ms-flex-order: -2;
-            order: -2;
+    order: -2;
     margin-right: 10px;
   }
   .page-header__icon-logo {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .page-header__icon-divider {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
+    order: 0;
   }
   .page-header__icon-chat {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
     margin-right: 10px;
   }
   .page-header__icon-profile {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
     margin-right: 10px;
   }
   .page-header__icon-divider2 {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
     margin-right: 10px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
   .page-header__icon-tools {
     margin-right: 10px;
@@ -377,23 +287,13 @@ button {
     margin-left: 30px;
   }
   .main-information {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 50%;
-        -ms-flex: 50% 50%;
-            flex: 50% 50%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex: 50% 50%;
+    flex-direction: row;
   }
   .text {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-left: 0;
     font-size: 14px;
     text-align: left;
@@ -424,16 +324,13 @@ button {
   .second-title-icon {
     width: 25px;
     height: 30px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
   .img-styles1 {
     width: 320px;
     border-radius: 2.5%;
   }
 }
-
 /* 1120px  на компьютеры  */
 @media (min-width: 1120px) {
   .page-header {
@@ -494,11 +391,8 @@ button {
     position: absolute;
   }
   .page-main__buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-left: 32px;
     font-family: "TT Lakes";
   }
@@ -523,21 +417,12 @@ button {
     display: none;
   }
   .page-main .main-information {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-flex: 50%;
-        -ms-flex: 50% 50%;
-            flex: 50% 50%;
+    flex-direction: row;
+    flex: 50% 50%;
   }
   .page-main .main-information .text {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
+    flex: 50%;
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -545,9 +430,7 @@ button {
     margin-bottom: 0;
   }
   .page-main .main-information .img-styles1 {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
+    flex: 50%;
     width: 530px;
     margin-right: 30px;
     border-radius: 2.5%;

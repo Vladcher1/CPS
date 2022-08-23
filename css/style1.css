@@ -6,7 +6,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "TT Lakes";
   src: url("TTLakes-Bold.eot");
@@ -14,110 +13,77 @@
   font-weight: bold;
   font-style: normal;
 }
-
 img:hover {
-  -webkit-filter: grayscale(0.2);
-          filter: grayscale(0.2);
+  filter: grayscale(0.2);
 }
 
 body {
-  width: 320px;
-  height: 1024px;
+  max-width: 320px;
   margin-right: auto;
   font-family: "TT Lakes";
   position: -webkit-sticky;
   position: sticky;
+  margin-bottom: 0;
   margin-left: 0;
-  -webkit-box-shadow: 10px 10px 30px 10px #0e185033;
-          box-shadow: 10px 10px 30px 10px #0e185033;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 10px 10px 30px 10px rgba(14, 24, 80, 0.2);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   /* шапка модалки */
   /* меню модалки */
   /* кнопки модалки */
   /* подвал модалки */
 }
-
 body .link-style {
   color: inherit;
   text-decoration: none;
 }
-
 body .modal-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-top: 20px;
+  margin-bottom: 30px;
   padding-left: 24px;
   padding-right: 24px;
 }
-
 body .modal-header .link-style {
   margin-top: 0;
 }
-
 body .modal-header .button-style {
   width: 40px;
   height: 40px;
   margin: 0;
   padding: 0;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
-
 body .modal-header .modal-header__opened-menu {
   margin-right: 16px;
 }
-
 body .modal-header .modal-header__icon-search {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-self: flex-end;
 }
-
 body .modal-header .modal-header__logo {
   margin-right: 65px;
 }
-
 body .modal-main__headline {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-
 body .modal-main__headline .modal-main__headline-title {
-  margin-left: 20px;
+  margin-left: 16px;
   font-size: 16px;
   color: #7e7e82;
   letter-spacing: -0.2px;
   font-weight: normal;
   font-style: normal;
 }
-
 body .button-list {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 body .button-list .button-style {
   font-family: "TT Lakes";
   text-align: start;
@@ -128,8 +94,8 @@ body .button-list .button-style {
   font-size: 16px;
   margin-bottom: 30px;
   margin-left: 20px;
+  padding: 0;
 }
-
 body .button-style {
   font-family: "TT Lakes";
   text-align: start;
@@ -139,80 +105,63 @@ body .button-style {
   list-style-type: none;
   font-size: 16px;
 }
-
 body .button-style:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  transform: scale(1.05);
+  transition-duration: 0.5s;
   font-style: medium;
 }
-
 body .modal-footer {
   margin-top: auto;
   margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 120px;
 }
-
 body .modal-footer .modal-footer__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 16px;
 }
-
 body .modal-footer .modal-footer__buttons .button-footer-1 {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   margin: 0;
   margin-left: 24px;
   margin-right: 16px;
+  padding: 0;
 }
-
 body .modal-footer .modal-footer__buttons .button-footer-2 {
   margin: 0;
   margin-right: 16px;
+  padding: 0;
 }
-
 body .modal-footer .modal-footer__buttons .button-footer-3 {
   margin: 0;
+  padding: 0;
 }
-
 body .modal-footer .modal-footer__copy {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 body .modal-footer .modal-footer__copy .email {
   margin-left: 24px;
 }
-
 body .modal-footer .modal-footer__copy .phone {
   margin-top: 12px;
   margin-left: 24px;
   font-weight: bold;
   font-size: 24px;
 }
-
 body .modal-footer .modal-footer__copy .lang {
   margin-left: 24px;
   margin-top: 40px;
   margin-bottom: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 body .modal-footer .modal-footer__copy .lang .button-style {
   margin: 0;
   padding: 0;
   margin-right: 7px;
 }
-
 body .modal-footer .modal-footer__copy .lang .button-style:hover {
   opacity: 0.5;
 }

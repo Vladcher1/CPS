@@ -24,16 +24,15 @@ img:hover {
   filter: grayscale(0.2);
 }
 body {
-  width: 320px;
-  height: 1024px;
+  max-width: 320px;
   margin-right: auto;
   font-family: "TT Lakes";
   position: sticky;
+  margin-bottom: 0;
   margin-left: 0;
   box-shadow: 10px 10px 30px 10px #0e185033;
   display:flex;
   flex-direction: column;
-
 
   .link-style{
     color:inherit;
@@ -44,6 +43,7 @@ body {
     display: flex;
     justify-content:space-between;
     padding-top:20px;
+    margin-bottom: 30px;
     padding-left: 24px;
     padding-right:24px;
 
@@ -75,10 +75,10 @@ body {
   .modal-main__headline {
     display: flex;
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     .modal-main__headline-title {
-      margin-left: 20px;
+      margin-left: 16px;
       font-size: 16px;
       color: #7e7e82;
       letter-spacing: -0.2px;
@@ -103,6 +103,7 @@ body {
       font-size: 16px;
       margin-bottom: 30px;
       margin-left:20px;
+      padding: 0;
     }
   }
   .button-style {
@@ -125,6 +126,11 @@ body {
   .modal-footer {
     margin-top: auto;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 120px;
+  
     .modal-footer__buttons {
       display: flex;
       margin-bottom: 16px;
@@ -134,13 +140,16 @@ body {
         margin: 0;
         margin-left: 24px;
         margin-right: 16px;
+        padding:0;
       }
       .button-footer-2 {
         margin: 0;
         margin-right: 16px;
+        padding:0;
       }
       .button-footer-3 {
         margin: 0;
+        padding:0;
       }
     }
 
