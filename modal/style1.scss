@@ -1,51 +1,52 @@
 @font-face {
   font-family: "TT Lakes";
-  src: url("TTLakes-Regular.eot");
   src: local("TT Lakes Regular"), local("TTLakes-Regular"),
-    url("TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/TTLakes-Regular.woff") format("woff"),
-    url("TTLakes-Regular.ttf") format("truetype");
+    url("/fonts/TTLakes-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("TTLakes-Bold.eot");
   src: local("TT Lakes Bold"), local("TTLakes-Bold"),
-    url("TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/TTLakes-Bold.woff") format("woff"),
-    url("TTLakes-Bold.ttf") format("truetype");
+    url("/fonts/TTLakes-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
-img:hover {
+.button-style:hover {
   filter: grayscale(0.2);
 }
+
 body {
-  max-width: 320px;
+  margin: 0;
+  min-height: 100vh;
+  
+}
+.modal-style {
+  width: 320px;
+  min-height: 100vh;
   margin-right: auto;
   font-family: "TT Lakes";
   position: sticky;
   margin-bottom: 0;
   margin-left: 0;
   box-shadow: 10px 10px 30px 10px #0e185033;
-  display:flex;
+  display: flex;
   flex-direction: column;
 
-  .link-style{
-    color:inherit;
+  .link-style {
+    color: inherit;
     text-decoration: none;
   }
   /* шапка модалки */
   .modal-header {
     display: flex;
-    justify-content:space-between;
-    padding-top:20px;
+    justify-content: space-between;
+    padding-top: 20px;
     margin-bottom: 30px;
     padding-left: 24px;
-    padding-right:24px;
+    padding-right: 24px;
 
     .link-style {
       margin-top: 0;
@@ -58,13 +59,12 @@ body {
       padding: 0;
       align-self: center;
     }
-    .modal-header__opened-menu{
+    .modal-header__opened-menu {
       margin-right: 16px;
     }
     .modal-header__icon-search {
-      display:flex;
+      display: flex;
       justify-self: flex-end;
-  
     }
 
     .modal-header__logo {
@@ -102,7 +102,7 @@ body {
       list-style-type: none;
       font-size: 16px;
       margin-bottom: 30px;
-      margin-left:20px;
+      margin-left: 20px;
       padding: 0;
     }
   }
@@ -129,8 +129,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: 120px;
-  
+
     .modal-footer__buttons {
       display: flex;
       margin-bottom: 16px;
@@ -140,16 +139,16 @@ body {
         margin: 0;
         margin-left: 24px;
         margin-right: 16px;
-        padding:0;
+        padding: 0;
       }
       .button-footer-2 {
         margin: 0;
         margin-right: 16px;
-        padding:0;
+        padding: 0;
       }
       .button-footer-3 {
         margin: 0;
-        padding:0;
+        padding: 0;
       }
     }
 
@@ -157,7 +156,7 @@ body {
       display: flex;
       flex-direction: column;
 
-      .email{
+      .email {
         margin-left: 24px;
       }
       .phone {
