@@ -436,3 +436,39 @@ button {
     border-radius: 2.5%;
   }
 }
+.brands {
+  display: flex;
+  flex-direction: column;
+}
+.brands li {
+  list-style: none;
+}
+
+.brands__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 0;
+  row-gap: 16px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+
+.brand-list-title {
+  margin-left: 33px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  letter-spacing: -0.2px;
+  color: #7E7E82;
+  text-transform: uppercase;
+}
+
+.brand-style {
+  padding: 0;
+}
+
+.second-title:last-child {
+  margin-left: 33px;
+}
