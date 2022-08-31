@@ -235,6 +235,11 @@ button {
   align-self: center;
 }
 
+.swiper {
+  min-width:320px;
+  height: auto;
+}
+
 /* пропадающие иконки при 320px  и отключение скролла в 320px  */
 @media (max-width: $phonewidth) {
   .page-header {
@@ -278,6 +283,40 @@ button {
     &__button-5 {
       display: none;
     }
+  }
+
+  .big{
+    display:none;
+  }
+
+  .brands .brand-list-title{
+    margin-left: 16px;
+    padding-left:0;
+  }
+  .brands .brands__list{
+    margin-left: 16px;
+    padding-left:0;
+  }
+
+  .swiper-slide{
+    margin-right: 0;
+  }
+
+  .buttons-swiper{
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .button-swiper{
+    width:12px;
+    height:12px;
+    background-color: #DDDDDD;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  
+  .button-swiper:first-child{
+    background-color: #B5B6BC;
   }
 }
 
@@ -389,6 +428,10 @@ button {
   .img-styles1 {
     width: 320px;
     border-radius: 2.5%;
+  }
+
+  .brands__list.swiper{
+    display:none;
   }
 }
 
@@ -515,6 +558,10 @@ button {
         border-radius: 2.5%;
       }
     }
+  }
+
+  .brands__list.swiper{
+    display:none;
   }
 }
 
