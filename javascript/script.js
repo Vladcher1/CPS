@@ -52,24 +52,26 @@ let swiper = new Swiper('.swiper', {
 
 // убираем классы слайдера и добавляем brand элементам списка, убрать brands__list у ул и добавить диву внизу
 
-let brands = document.querySelector('.brands');
-let brandsList = brands.querySelector('.brands__list');
-let div = brandsList.querySelector('div');
-let brand = div.querySelectorAll('li');
-let pagination = brands.querySelector('.swiper-pagination');
+const brands = document.querySelector('.brands');
+const brandsList = brands.querySelector('.brands__list');
+const divSwiperWrapper = brandsList.querySelector('div');
+const brand = divSwiperWrapper.querySelectorAll('li');
+const pagination = brands.querySelector('.swiper-pagination');
 
 window.addEventListener('resize', function () {
-  const mediaQuery = window.matchMedia('(max-width: 768px)');
+});
+
+ const mediaQuery = window.matchMedia('(max-width: 768px)');
 
   if (!mediaQuery.matches) { 
   swiper.destroy();
   brandsList.classList.remove('swiper');
   brandsList.classList.remove('brands__list');
-  div.classList.remove('swiper-wrapper');
-  div.classList.add('brands__list');
+  divSwiperWrapper.classList.remove('swiper-wrapper');
+  divSwiperWrapper.classList.add('brands__list');
+console.log(brand);
+
   brand.classList.remove('swiper-slide');
   brand.classList.add('brand');
-  }
-});
-
-console.log(brand);
+  
+}
