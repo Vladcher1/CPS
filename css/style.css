@@ -518,3 +518,7 @@ ul {
 .second-title:last-child {
   margin-left: 0;
 }
+
+.hidden {
+  display: none;
+}

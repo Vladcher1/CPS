@@ -55,7 +55,7 @@ let swiper = new Swiper('.swiper', {
 const brands = document.querySelector('.brands');
 const brandsList = brands.querySelector('.brands__list');
 const divSwiperWrapper = brandsList.querySelector('div');
-const brand = brands.querySelectorAll('li');
+const brand = brandsList.querySelectorAll('li');
 const swiperSlide = document.querySelectorAll('.swiper-slide');
 
 
@@ -78,3 +78,27 @@ window.addEventListener('resize', function () {
     elem.classList.remove('swiper-slide');
     }
 }
+
+
+// нужно накинуть элементам класс hidden - после 10 элемента например
+// при нажатии на кнопку открыть, на кнопку накидывается 
+// класс button-open и убирается класс button-close
+
+// button-open - содержимое кнопки меняется на скрыть 
+// и у всех элементов списка убирается класс hidden
+
+// button-close - содержимое по умолчанию, у всех элементов списка после 10 класс hidden 
+
+
+const button = document.querySelector('.brands-button');
+
+console.log(brands);
+button.addEventListener('click', function () {
+  brandsList.classList.add('button-open');
+  brandsList.classList.remove('button-close');
+
+  
+
+  //for (let i = 10; i<= )
+console.log('работает');
+});
