@@ -55,8 +55,10 @@ let swiper = new Swiper('.swiper', {
 const brands = document.querySelector('.brands');
 const brandsList = brands.querySelector('.brands__list');
 const divSwiperWrapper = brandsList.querySelector('div');
-const brand = divSwiperWrapper.querySelectorAll('li');
-const pagination = brands.querySelector('.swiper-pagination');
+const brand = brands.querySelectorAll('li');
+const swiperSlide = document.querySelectorAll('.swiper-slide');
+
+
 
 window.addEventListener('resize', function () {
 });
@@ -69,9 +71,10 @@ window.addEventListener('resize', function () {
   brandsList.classList.remove('brands__list');
   divSwiperWrapper.classList.remove('swiper-wrapper');
   divSwiperWrapper.classList.add('brands__list');
-console.log(brand);
 
-  brand.classList.remove('swiper-slide');
-  brand.classList.add('brand');
-  
+
+  for ( let elem of brand){
+    elem.classList.add('brand');
+    elem.classList.remove('swiper-slide');
+    }
 }
