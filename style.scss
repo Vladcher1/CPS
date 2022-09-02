@@ -48,6 +48,11 @@ button {
   border: none;
 }
 
+/* Убираем внутренние отступы */
+ul{
+  padding: 0;
+}
+
 .page-header {
   padding: 15px 15px 10px 15px;
   background-color: #ffffff;
@@ -210,7 +215,7 @@ button {
     padding: 0;
 
     .paragraph320 {
-      margin-bottom: 0;
+      margin-bottom: 16px;
       margin-top: 16px;
       margin-left: 16px;
     }
@@ -303,9 +308,9 @@ background-color:#B5B6BC;
   }
 
 
-  .second-title:last-child{
-    display:none;
-  }
+  // .second-title:last-child{
+  //   display:none;
+  // }
 }
 
 /* 768px  на планшеты */
@@ -419,6 +424,9 @@ background-color:#B5B6BC;
     border-radius: 2.5%;
   }
 
+  .swiper-pagination{
+    display:none;
+  }
  
 }
 
@@ -547,7 +555,13 @@ background-color:#B5B6BC;
     }
   }
 
-  
+  .swiper-pagination{
+    display:none;
+  }
+
+  .second-title{
+    padding: 0;
+  }
 }
 
 .brands{
@@ -555,20 +569,25 @@ background-color:#B5B6BC;
   flex-direction: column;
   li{
     list-style: none;
-  }
-
-  
+  } 
 }
 
 .brands__list{
     display:flex;
     flex-wrap: wrap;
+    flex-direction: row;
 
     margin-left: 32px;
     margin-right:32px;
     padding:0;
     row-gap: 16px;
     column-gap: 32px;
+  }
+
+ .brand{
+    display:flex;
+    flex-wrap: wrap;
+    grid: 16px;
   }
 .brand-list-title{
   margin-left: 33px;
@@ -584,5 +603,5 @@ background-color:#B5B6BC;
 padding:0;
 }
 .second-title:last-child{
-  margin-left: 33px;
+  margin-left: 0;
 }
