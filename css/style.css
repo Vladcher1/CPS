@@ -33,6 +33,7 @@ body {
 button {
   background-color: transparent;
   border: none;
+  font-family: inherit;
 }
 
 /* Убираем внутренние отступы */
@@ -263,6 +264,9 @@ ul {
   .page-main__buttons__button-5 {
     display: none;
   }
+  .brands-button {
+    display: none;
+  }
 }
 /* 768px  на планшеты */
 @media (min-width: 767.95px) and (max-width: 1119.95px) {
@@ -362,6 +366,20 @@ ul {
   }
   .swiper-pagination {
     display: none;
+  }
+  .brands__list {
+    margin-left: 24px !important;
+    margin-right: 24px !important;
+    -moz-column-gap: 24px !important;
+         column-gap: 24px !important;
+  }
+  .brand-style {
+    width: 224px;
+    height: 72px;
+  }
+  .brand-style img {
+    width: 224px;
+    height: 72px;
   }
 }
 /* 1120px  на компьютеры  */

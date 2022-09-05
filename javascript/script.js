@@ -57,13 +57,14 @@ const brandsList = brands.querySelector('.brands__list');
 const divSwiperWrapper = brandsList.querySelector('div');
 const brand = brandsList.querySelectorAll('li');
 const swiperSlide = document.querySelectorAll('.swiper-slide');
-
+const brandsButton = document.querySelector('.brands-button');
+const brandsButtonText = brandsButton.querySelector('p');
 
 
 window.addEventListener('resize', function () {
 });
 
- const mediaQuery = window.matchMedia('(max-width: 768px)');
+ const mediaQuery = window.matchMedia('(max-width: 767px)');
 
   if (!mediaQuery.matches) { 
   swiper.destroy();
@@ -91,14 +92,76 @@ window.addEventListener('resize', function () {
 
 
 const button = document.querySelector('.brands-button');
+let hiddenBrand = divSwiperWrapper.children;
+const media1120 = window.matchMedia('(min-width: 1120px)');
 
-console.log(brands);
+window.addEventListener('resize', function () {
+});
+
+if (mediaQuery.matches){
+  for (let i = 0; i <hiddenBrand.length; i++ ){
+    hiddenBrand[i].classList.remove('hidden');
+  }
+}
+// если размер больше 1120
+if (media1120.matches){
+
+// первые 8 элементов открыты
+for (let i = 0; i<= 7; i++){
+  hiddenBrand[i].classList.remove('hidden');
+};
+
+// при нажатии на кнопку у всех элементов пропадает hidden
 button.addEventListener('click', function () {
+  if(brandsList.classList.contains('button-close')){
   brandsList.classList.add('button-open');
   brandsList.classList.remove('button-close');
 
-  
+  for (let i = 0; i< hiddenBrand.length; i++){
 
-  //for (let i = 10; i<= )
-console.log('работает');
-});
+    hiddenBrand[i].classList.remove('hidden');
+    brandsButtonText.textContent = 'Скрыть';
+
+  };
+  } else {
+    brandsList.classList.add('button-close');
+  brandsList.classList.remove('button-open');
+
+  for (let i = 8; i< hiddenBrand.length; i++){
+
+    hiddenBrand[i].classList.add('hidden');
+    brandsButtonText.textContent = 'Показать всё';
+  };
+  }
+ }); 
+} else{
+
+// первые 6 элементов открыты
+for (let i = 0; i<= 5; i++){
+  hiddenBrand[i].classList.remove('hidden');
+};
+
+// при нажатии на кнопку у всех элементов пропадает hidden
+button.addEventListener('click', function () {
+  if(brandsList.classList.contains('button-close')){
+  brandsList.classList.add('button-open');
+  brandsList.classList.remove('button-close');
+
+  for (let i = 0; i< hiddenBrand.length; i++){
+
+    hiddenBrand[i].classList.remove('hidden');
+    brandsButtonText.textContent = 'Скрыть';
+
+  };
+  } else {
+    brandsList.classList.add('button-close');
+  brandsList.classList.remove('button-open');
+
+  for (let i = 6; i< hiddenBrand.length; i++){
+
+    hiddenBrand[i].classList.add('hidden');
+    brandsButtonText.textContent = 'Показать всё';
+  };
+  }
+ }); 
+}
