@@ -426,6 +426,7 @@ ul {
   }
 
   .second-title-icon {
+    margin-left: 24px;
     width: 25px;
     height: 30px;
     align-self: center;
@@ -441,9 +442,10 @@ ul {
   }
 
   .brands__list {
-    margin-left: 24px !important;
-    margin-right: 24px !important;
-    column-gap: 24px !important;
+    margin-left: 24px;
+    margin-right: 24px;
+    column-gap: 24px;
+    row-gap: 16px;
   }
 
   .brand-style {
@@ -549,6 +551,10 @@ ul {
       padding-left: 0;
     }
 
+    .brands-button .second-title-icon {
+      margin-left: 24px;
+    }
+
     .text {
       margin-right: 36px;
       .page-main__text {
@@ -589,6 +595,15 @@ ul {
   .second-title {
     padding: 0;
   }
+
+.brands__list{
+  
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 0;
+  row-gap: 16px;
+  column-gap: 32px;
+}
 }
 
 .brands {
@@ -603,12 +618,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-
-  margin-left: 32px;
-  margin-right: 32px;
-  padding: 0;
-  row-gap: 16px;
-  column-gap: 32px;
 }
 
 .brand {
