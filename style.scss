@@ -271,6 +271,15 @@ ul {
 .button-not-rotate{
 }
 
+.brands__list{
+  
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 0;
+  row-gap: 16px;
+  column-gap: 32px;
+}
+
 /* пропадающие иконки при 320px  и отключение скролла в 320px  */
 @media (max-width: $phonewidth) {
   .page-header {
@@ -596,14 +605,7 @@ ul {
     padding: 0;
   }
 
-.brands__list{
-  
-  margin-left: 32px;
-  margin-right: 32px;
-  padding: 0;
-  row-gap: 16px;
-  column-gap: 32px;
-}
+
 }
 
 .brands {
