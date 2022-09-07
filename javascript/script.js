@@ -36,7 +36,8 @@ const brandsButtonText = brandsButton.querySelector("p");
 const icon = document.querySelector('.brands-button-rotate');
 
 
-window.addEventListener("resize", function () {});
+// window.addEventListener("resize", function () {});
+
 
 const mediaQuery = window.matchMedia("(max-width: 767px)");
 
@@ -53,55 +54,26 @@ if (!mediaQuery.matches) {
   }
 }
 
+
+
+
+
 const button = document.querySelector(".brands-button");
-let hiddenBrand = divSwiperWrapper.children;
+const hiddenBrand = divSwiperWrapper.children;
 const media1120 = window.matchMedia("(min-width: 1120px)");
+const media768 = window.matchMedia("(min-width: 768px)");
 
-window.addEventListener("resize", function () {});
 
-if (mediaQuery.matches) {
-  for (let i = 0; i < hiddenBrand.length; i++) {
-    hiddenBrand[i].classList.remove("hidden");
-  }
-}
-// если размер больше 1120
-if (media1120.matches) {
-  // первые 8 элементов открыты
-  for (let i = 0; i <= 7; i++) {
-    hiddenBrand[i].classList.remove("hidden");
-  }
 
-  // при нажатии на кнопку у всех элементов пропадает hidden
-  button.addEventListener("click", function () {
 
-    if (icon.classList.contains("button-not-rotate")) {
-      icon.classList.add("button-rotate");
-      icon.classList.remove("button-not-rotate") } else {
-        icon.classList.add("button-not-rotate");
-        icon.classList.remove("button-rotate")
-      }
+let amountOfElements = function () {
 
-    if (brandsList.classList.contains("button-close")) {
-      brandsList.classList.remove("button-close");
-      brandsList.classList.add("button-open");
-      
-      for (let i = 0; i < hiddenBrand.length; i++) {
-        hiddenBrand[i].classList.remove("hidden");
-        brandsButtonText.textContent = "Скрыть";
-      }
-    } else {
-      brandsList.classList.add("button-close");
-      brandsList.classList.remove("button-open");
+  window.addEventListener('resize', function ()  {
+  if ((media768.matches) && (!media1120.matches)){
+    let elements = 6;
 
-      for (let i = 8; i < hiddenBrand.length; i++) {
-        hiddenBrand[i].classList.add("hidden");
-        brandsButtonText.textContent = "Показать всё";
-      }
-    }
-  });
-} else {
-  // первые 6 элементов открыты
-  for (let i = 0; i <= 5; i++) {
+    // первые 6 элементов открыты
+  for (let i = 0; i <= elements - 1; i++) {
     hiddenBrand[i].classList.remove("hidden");
   }
 
@@ -127,4 +99,56 @@ if (media1120.matches) {
       }
     }
   });
+  // button.removeEventListener("click", function () {};
+
+  } else if (media1120.matches){
+    let elements = 8;
+
+
+// первые 8 элементов открыты
+for (let i = 0; i <= elements - 1; i++) {
+  hiddenBrand[i].classList.remove("hidden");
+}
+
+// при нажатии на кнопку у всех элементов пропадает hidden
+button.addEventListener("click", function () {
+
+  if (icon.classList.contains("button-not-rotate")) {
+    icon.classList.add("button-rotate");
+    icon.classList.remove("button-not-rotate") } else {
+      icon.classList.add("button-not-rotate");
+      icon.classList.remove("button-rotate")
+    }
+
+  if (brandsList.classList.contains("button-close")) {
+    brandsList.classList.remove("button-close");
+    brandsList.classList.add("button-open");
+    
+    for (let i = 0; i < hiddenBrand.length; i++) {
+      hiddenBrand[i].classList.remove("hidden");
+      brandsButtonText.textContent = "Скрыть";
+    }
+  } else {
+    brandsList.classList.add("button-close");
+    brandsList.classList.remove("button-open");
+
+    for (let i = 8; i < hiddenBrand.length; i++) {
+      hiddenBrand[i].classList.add("hidden");
+      brandsButtonText.textContent = "Показать всё";
+    }
+  }
+});
+  }
+
+
+});
+} 
+
+amountOfElements(window);
+
+
+if (mediaQuery.matches) {
+  for (let i = 0; i < hiddenBrand.length; i++) {
+    hiddenBrand[i].classList.remove("hidden");
+  }
 }
