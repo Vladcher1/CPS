@@ -219,14 +219,18 @@ ul {
 }
 
 .swiper-pagination-bullet {
-  background-color: #DDDDDD;
+  background-color: #dddddd;
   width: 12px;
   height: 12px;
   margin-right: 12px;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #B5B6BC;
+  background-color: #b5b6bc;
+}
+
+.button-rotate {
+  transform: rotate(180deg);
 }
 
 /* пропадающие иконки при 320px  и отключение скролла в 320px  */
@@ -525,7 +529,7 @@ ul {
   line-height: 24px;
   font-weight: normal;
   letter-spacing: -0.2px;
-  color: #7E7E82;
+  color: #7e7e82;
   text-transform: uppercase;
 }
 
