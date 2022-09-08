@@ -233,7 +233,8 @@ ul {
   transform: rotate(180deg);
 }
 
-.brands__list {
+.brands__list,
+.machines__list {
   margin-left: 32px;
   margin-right: 32px;
   padding: 0;
@@ -381,18 +382,21 @@ ul {
   .swiper-pagination {
     display: none;
   }
-  .brands__list {
+  .brands__list,
+.machines__list {
     margin-left: 24px;
     margin-right: 24px;
     -moz-column-gap: 24px;
          column-gap: 24px;
     row-gap: 16px;
   }
-  .brand-style {
+  .brand-style,
+.machine-style {
     width: 224px;
     height: 72px;
   }
-  .brand-style img {
+  .brand-style img,
+.machine-style img {
     width: 224px;
     height: 72px;
   }
@@ -519,7 +523,8 @@ ul {
   list-style: none;
 }
 
-.brands__list {
+.brands__list,
+.machines__list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -531,7 +536,8 @@ ul {
   grid: 16px;
 }
 
-.brand-list-title {
+.brand-list-title,
+.machines-list-title {
   margin-left: 33px;
   font-size: 16px;
   line-height: 24px;
@@ -541,7 +547,8 @@ ul {
   text-transform: uppercase;
 }
 
-.brand-style {
+.brand-style,
+.machine-style {
   padding: 0;
 }
 
