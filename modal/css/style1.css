@@ -1,0 +1,170 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "TT Lakes";
+  src: local("TT Lakes Regular"), local("TTLakes-Regular"), url("/fonts/TTLakes-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: local("TT Lakes Bold"), local("TTLakes-Bold"), url("/fonts/TTLakes-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+.button-style:hover {
+  filter: grayscale(0.2);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.modal-style {
+  width: 320px;
+  min-height: 100vh;
+  margin-right: auto;
+  font-family: "TT Lakes";
+  position: -webkit-sticky;
+  position: sticky;
+  margin-bottom: 0;
+  margin-left: 0;
+  box-shadow: 10px 10px 30px 10px rgba(14, 24, 80, 0.2);
+  display: flex;
+  flex-direction: column;
+  /* шапка модалки */
+  /* меню модалки */
+  /* кнопки модалки */
+  /* подвал модалки */
+}
+.modal-style .link-style {
+  color: inherit;
+  text-decoration: none;
+}
+.modal-style .modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.modal-style .modal-header .link-style {
+  margin-top: 0;
+}
+.modal-style .modal-header .button-style {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+.modal-style .modal-header .modal-header__opened-menu {
+  margin-right: 16px;
+}
+.modal-style .modal-header .modal-header__icon-search {
+  display: flex;
+  justify-self: flex-end;
+}
+.modal-style .modal-header .modal-header__logo {
+  margin-right: 65px;
+}
+.modal-style .modal-main__headline {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.modal-style .modal-main__headline .modal-main__headline-title {
+  margin-left: 16px;
+  font-size: 16px;
+  color: #7e7e82;
+  letter-spacing: -0.2px;
+  font-weight: normal;
+  font-style: normal;
+}
+.modal-style .button-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.modal-style .button-list .button-style {
+  font-family: "TT Lakes";
+  text-align: start;
+  display: block;
+  background-color: transparent;
+  border: none;
+  list-style-type: none;
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  padding: 0;
+}
+.modal-style .button-style {
+  font-family: "TT Lakes";
+  text-align: start;
+  display: block;
+  background-color: transparent;
+  border: none;
+  list-style-type: none;
+  font-size: 16px;
+}
+.modal-style .button-style:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+  font-style: medium;
+}
+.modal-style .modal-footer {
+  margin-top: auto;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.modal-style .modal-footer .modal-footer__buttons {
+  display: flex;
+  margin-bottom: 16px;
+}
+.modal-style .modal-footer .modal-footer__buttons .button-footer-1 {
+  align-self: flex-start;
+  margin: 0;
+  margin-left: 24px;
+  margin-right: 16px;
+  padding: 0;
+}
+.modal-style .modal-footer .modal-footer__buttons .button-footer-2 {
+  margin: 0;
+  margin-right: 16px;
+  padding: 0;
+}
+.modal-style .modal-footer .modal-footer__buttons .button-footer-3 {
+  margin: 0;
+  padding: 0;
+}
+.modal-style .modal-footer .modal-footer__copy {
+  display: flex;
+  flex-direction: column;
+}
+.modal-style .modal-footer .modal-footer__copy .email {
+  margin-left: 24px;
+}
+.modal-style .modal-footer .modal-footer__copy .phone {
+  margin-top: 12px;
+  margin-left: 24px;
+  font-weight: bold;
+  font-size: 24px;
+}
+.modal-style .modal-footer .modal-footer__copy .lang {
+  margin-left: 24px;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  display: flex;
+}
+.modal-style .modal-footer .modal-footer__copy .lang .button-style {
+  margin: 0;
+  padding: 0;
+  margin-right: 7px;
+}
+.modal-style .modal-footer .modal-footer__copy .lang .button-style:hover {
+  opacity: 0.5;
+}
