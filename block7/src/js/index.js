@@ -1,4 +1,4 @@
-import '../scss/main.scss';
+import '../scss/style.scss'
 
 let swiper = new Swiper('.swiper', {
   // Optional parameters

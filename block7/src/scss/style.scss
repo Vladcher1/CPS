@@ -1,3 +1,4 @@
+
 $backgroundcolor: #f8f8f8;
 $titlecolor: #1b1c21;
 $buttoncolor: #7e7e82;
@@ -6,28 +7,22 @@ $phonewidth: 767.95px;
 $tabletwidth: 1119.95px;
 
 @font-face {
-  font-family: "TT Lakes";
-  src: url("TTLakes-Regular.eot");
-  src: local("TT Lakes Regular"), local("TTLakes-Regular"),
-    url("/fonts/TTLakes-Regular.woff") format("woff");
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "TT Lakes";
-  src: url("TTLakes-Bold.eot");
-  src: local("TT Lakes Bold"), local("TTLakes-Bold"),
-    url("/fonts/TTLakes-Bold.woff") format("woff");
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "TT Lakes";
-  src: url("TTLakes-Medium.eot");
-  src: local("TT Lakes Medium"), local("TTLakes-Medium"),
-    url("/fonts/TTLakes-Medium.woff") format("woff");
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
@@ -35,7 +30,7 @@ $tabletwidth: 1119.95px;
 /* тут все стили для боди  */
 body {
   margin: 0;
-  font-family: "TT Lakes";
+  font-family: 'TT Lakes';
   background-color: $backgroundcolor;
   font-style: normal;
   width: 100%;
@@ -184,7 +179,7 @@ ul {
     color: #7e7e82;
     font-size: 0 16px;
     margin-right: 10px;
-    font-family: "TT Lakes";
+    font-family: 'TT Lakes';
     font-size: 16px;
     line-height: 24px;
   }
@@ -263,16 +258,11 @@ ul {
   background-color: #b5b6bc;
 }
 
-
-.button-rotate{
+.button-rotate {
   transform: rotate(180deg);
 }
 
-.button-not-rotate{
-}
-
-.brands__list{
-  
+.brands__list {
   margin-left: 32px;
   margin-right: 32px;
   padding: 0;
@@ -489,7 +479,7 @@ ul {
       top: -15px;
       right: 8px;
       font-size: 16px;
-      font-family: "TT Lakes";
+      font-family: 'TT Lakes';
       font-weight: 500;
     }
 
@@ -504,7 +494,7 @@ ul {
       top: -15px;
       right: 8px;
       font-size: 16px;
-      font-family: "TT Lakes";
+      font-family: 'TT Lakes';
       font-weight: 500;
     }
 
@@ -543,7 +533,7 @@ ul {
       display: flex;
       flex-wrap: wrap;
       margin-left: 32px;
-      font-family: "TT Lakes";
+      font-family: 'TT Lakes';
     }
 
     &__highlight {
@@ -604,8 +594,6 @@ ul {
   .second-title {
     padding: 0;
   }
-
-
 }
 
 .brands {
@@ -646,10 +634,4 @@ ul {
 
 .hidden {
   display: none;
-}
-
-.button-open {
-}
-
-.button-close {
 }

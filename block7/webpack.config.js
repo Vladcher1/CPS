@@ -17,10 +17,6 @@ module.exports = {
   devtool: "source-map",
   module: {
     rules: [
-      {
-      test: /\.css$/,
-      use: ["style-loader", "css-loader"],
-    },
       // Транспилируем js с babel
       {
         test: /\.js$/,
