@@ -7,14 +7,13 @@
   <title>cps</title>
   <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   
 </head>
 
 <body>
-  
+  <div class="flexbox-container">
   <div class ='modal-style'>
     <header class="modal-header">
       <button class="button-style"><img class="modal-header__opened-menu" alt="меню" title="меню"
@@ -24,8 +23,8 @@
       <button class="button-style"><img class="modal-header__icon-search" alt="статус ремонта" title="статус ремонта"
           src="\src\img\checkstatusicon-search.svg"></button>
     </header>
-  
-    <main class="modal-main">
+    
+<main class="modal-main">
       <nav class="modal-main__main-menu">
         <div class="modal-main__headline">
           <img class="modal-main__headline-icon" src="/src/img/highlight.svg">
@@ -56,7 +55,7 @@
             </button>
         </ul>
       </nav>
-    </main>
+    
     <footer class="modal-footer">
       <div class="modal-footer__buttons">
         <button class="button-style button-footer-1"><img src="\src\img\call.svg" alt="контакты"
@@ -77,6 +76,7 @@
     </footer>
   </div>
 
+  
   <header class="page-header">
     <nav class="page-header__main-menu">
       <!--иконки слева-->
@@ -124,7 +124,7 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <div class="page-main">
     <div class="page-main__highlight">
       <img src="src/img/highlight.svg" class="page-main__title-icon">
 
@@ -234,11 +234,152 @@
       <p>Показать всё</p>
         </button>
       </section>
+      <!-- ремонт различных видок техники -->
+    <section class="tech-repair">
+  <h2 class="brand-list-title">Ремонт техники различных видов техники</h2>
+      <ul class="brands__list button-close">
+        <div class="tech-container">
+        <li class="">
+          <button class="brand-style ">
+          <img src="src/img/cat1 (3).svg">
+          </button>
+        </li>
+        <li class="">
+          <button class="brand-style">
+          <img src="src/img/cat2 (1).svg">
+          </button>
+        </li>
+        <li class="">
+          <button class="brand-style">
+          <img src="src/img/cat3 (1).svg">
+          </button>
+        </li>
+        <li class="">
+          <button class="brand-style">
+          <img src="src/img/cat4 (1).svg">
+          </button>
+        </li>
+        </div>
+        </ul>
 
-  </main>
-  <footer class="page-footer"></footer>
-  </div>
-  </div>
+        <button class="second-title  button-close brands-button">
+          <img class="second-title-icon brands-button-rotate button-not-rotate" src="src/img/expand.svg" alt="показать все">
+          <p>Показать всё</p>
+            </button>
+</section>
+
+<!-- цена на услуги -->
+<section class="price">
+  <h2 class="brand-list-title">Цены на услуги</h2>
+  <div class="price-container">
+
+    <!-- <div>
+    
+    
+    
+</div> -->
+    <div class="name-column"><span>Ремонтные услуги</span>
+      <span>Диагностика</span>
+      <span>Замена дисплея</span>
+      <span>Замена полифонического динамика</span>
+      <span>Тестирование с выдачей технического заключения</span>
+      <span>Замена программного обеспечения</span>
+    </div>
+    <div class="price-column"><span>Цена</span>
+      <span>Бесплатно</span>
+      <span>1000р</span>
+      <span>1000р</span>
+      <span>1000р</span>
+      <span>1000р</span>
+    </div>
+    <div class="time-column"><span>Срок</span>
+      <span>30 мин</span>
+      <span>30-120 мин</span>
+      <span>30-120 мин</span>
+      <span>30-120 мин</span>
+      <span>30-120 мин</span>
+    </div>
+    <div class="button-column">
+      <div class="order-button"></div>
+    <button class="order-button">
+      <img src="src/img/group 10.svg">
+      </button>
+      <button class="order-button">
+        <img src="src/img/group 10.svg">
+        </button>
+        <button class="order-button">
+          <img src="src/img/group 10.svg">
+          </button>
+          <button class="order-button">
+            <img src="src/img/group 10.svg">
+            </button>
+            <button class="order-button">
+              <img src="src/img/group 10.svg">
+              </button>
+            </div>
+<!-- 
+    <li class="price-item">
+      
+      
+      <span>Срок</span>
+      <button class="brand-style">
+      </button>
+    </li>
+      <li class="price-item">
+        
+      
+      
+        <button class="brand-style ">
+        <img src="src/img/group 10.svg">
+        </button>
+      </li>
+        <li class="price-item">
+          
+      
+      <span>30-120 мин</span>
+          <button class="brand-style ">
+          <img src="src/img/group 10.svg">
+          </button>
+        </li>
+        <li class="price-item">
+          
+          <span>1000р</span>
+          <span>30-120 мин</span>
+          <button class="brand-style ">
+          <img src="src/img/group 10.svg">
+          </button>
+        </li>
+          <li class="price-item">
+            
+          <span>1000р</span>
+          <span>30-120 мин</span>
+            <button class="brand-style ">
+            <img src="src/img/group 10.svg">
+            </button>
+          </li>
+            <li class="price-item">
+              <span>Замена программного обеспечения</span>
+          <span>1000р</span>
+          <span>30-120 мин</span>
+              <button class="brand-style ">
+              <img src="src/img/group 10.svg">
+              </button>
+            </li>
+            </div> -->
+          </section>
+<div>
+            <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+            <button class="second-title  button-close brands-button">
+              <span>Получить коммерческое предложение</span>
+              <img src="/img/Line.svg">
+            </button>
+            </div>
+</div>
+</main>
+
+  <footer class="page-footer">
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="/javascript/script.js"></script>
   <script src="/javascript/openBrands.js"></script>

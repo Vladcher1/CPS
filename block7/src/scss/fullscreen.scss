@@ -1,0 +1,84 @@
+@media (min-width: 1439px) {
+  body {
+    width: 1440px;
+  }
+
+  .flexbox-container {
+    display: flex;
+  }
+
+  .modal-style {
+    width: 308px;
+    box-shadow: none;
+    background-color: white;
+  }
+  .page-main {
+    width: 1120px;
+    margin-left: 308px;
+  }
+
+  .modal-header {
+    .button-style:first-child {
+      display: none;
+    }
+  }
+  li {
+    list-style: none;
+  }
+  .tech-repair {
+    .tech-container {
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  .price-container{
+   display:flex;
+   flex-direction: row;
+   height:324px;
+   width:1056px;
+
+   background-color: #FFFFFF;
+   margin-left: 32px;
+   margin-right: 32px;
+
+   span{
+      display:block;
+      height:64px;
+      border-bottom: 1px solid #EAEAEA;
+   }
+
+   .name-column{
+      margin-left: 24px;
+   }
+
+   .price-column{
+      margin-left: auto;
+   }
+
+   .time-column{
+      margin-left: auto;
+   }
+
+   .button-column{
+      margin-right: 24px;
+
+      .order-button{
+         display:block;
+         height: 64px;
+         margin-top: 16px;
+         margin-bottom: 16px;
+         width:119px;
+         height:32px;
+      }
+   }
+   }
+
+.page-footer{
+  .copyright{
+   display:flex;
+   justify-content: space-between;
+   
+  }
+}
+}

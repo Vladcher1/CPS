@@ -1,5 +1,7 @@
 import '../scss/main.scss';
-import '../scss/style1.scss';
+import '../scss/modal.scss';
+import '../scss/fullscreen.scss';
+
 
 let swiper = new Swiper('.swiper', {
   // Optional parameters
