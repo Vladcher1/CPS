@@ -1,5 +1,5 @@
-import '../scss/main.scss'
-
+import '../scss/main.scss';
+import '../scss/style1.scss';
 
 let swiper = new Swiper('.swiper', {
   // Optional parameters
