@@ -29,37 +29,42 @@
     flex-direction: row;
     height: 324px;
     width: 1056px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin-left: 32px;
     margin-right: 32px;
   }
   .price-container span {
     display: block;
     height: 64px;
-    border-bottom: 1px solid #EAEAEA;
+    border-bottom: 1px solid #eaeaea;
   }
   .price-container .name-column {
-    margin-left: 24px;
+    margin-right: 124px;
   }
   .price-container .price-column {
-    margin-left: auto;
+    margin-right: 122px;
   }
-  .price-container .time-column {
-    margin-left: auto;
-  }
-  .price-container .button-column {
+  .button-column {
     margin-right: 24px;
   }
-  .price-container .button-column .order-button {
+  .button-column .order-button {
     display: block;
     height: 64px;
-    margin-top: 16px;
-    margin-bottom: 16px;
     width: 119px;
-    height: 32px;
+    padding: 0;
   }
   .page-footer .copyright {
     display: flex;
     justify-content: space-between;
+  }
+  .nds-text {
+    width: 421px;
+    height: 60px;
+    margin-top: 32px;
+    margin-left: 32px;
+  }
+  .nds-text .nds-text__img {
+    align-self: center;
+    margin-left: 9px;
   }
 }
