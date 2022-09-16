@@ -1,4 +1,3 @@
-
 $backgroundcolor: #f8f8f8;
 $titlecolor: #1b1c21;
 $buttoncolor: #7e7e82;
@@ -309,6 +308,7 @@ ul {
 
   .page-main__buttons {
     display: flex;
+    width: inherit;
 
     &__button-5 {
       display: none;
@@ -461,6 +461,7 @@ ul {
 /* 1120px  на компьютеры  */
 
 @media (min-width: 1120px) {
+  
   .page-header {
     background-color: $backgroundcolor;
     border: none;

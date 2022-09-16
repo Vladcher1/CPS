@@ -1,6 +1,6 @@
 @media (min-width: 1439px) {
   body {
-    width: 1440px;
+    margin:0;
   }
 
   .flexbox-container {
@@ -13,7 +13,6 @@
     background-color: white;
   }
   .page-main {
-    width: 1120px;
     margin-left: 308px;
   }
 
@@ -55,21 +54,9 @@
     .price-column {
       margin-right: 122px;
     }
-
-    .time-column {
-    }
   }
 
-  .button-column {
-    margin-right: 24px;
-
-    .order-button {
-      display: block;
-      height: 64px;
-      width: 119px;
-      padding: 0;
-    }
-  }
+  
 
   .page-footer {
     .copyright {

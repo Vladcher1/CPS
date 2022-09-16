@@ -1,6 +1,7 @@
 import '../scss/main.scss';
 import '../scss/modal.scss';
 import '../scss/fullscreen.scss';
+import '../scss/pricelist.scss';
 
 
 let swiper = new Swiper('.swiper', {
