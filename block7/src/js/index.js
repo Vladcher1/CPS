@@ -2,7 +2,7 @@ import '../scss/main.scss';
 import '../scss/modal.scss';
 import '../scss/fullscreen.scss';
 import '../scss/pricelist.scss';
-
+import '../scss/footer.scss';
 
 let swiper = new Swiper('.swiper', {
   // Optional parameters

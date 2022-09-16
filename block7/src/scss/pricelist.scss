@@ -1,97 +1,87 @@
 // заголовок таблицы прайслист
 .block {
-   display: flex;
-   flex-direction: row;
-   height: 64px;
-   justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  height: 64px;
+  justify-content: space-between;
 
-   .block-name {
-      width: 494px;
-      margin-left:24px;
-      margin-top:23px;
-    }
-    .block-price {
-      width: 175px;
-      margin-left:24px;
-      margin-top:23px;
-
-    }
-    .block-time {
-      width: 111px;
-      margin-left:24px;
-      margin-top:23px;
-
-    }
-    .order-button{
-      width:140px;
-      margin-left:24px;
-      margin-top:23px;
-    }
+  .block-name {
+    width: 494px;
+    margin-left: 24px;
+    margin-top: 23px;
+  }
+  .block-price {
+    width: 175px;
+    margin-left: 24px;
+    margin-top: 23px;
+  }
+  .block-time {
+    width: 111px;
+    margin-left: 24px;
+    margin-top: 23px;
+  }
+  .order-button {
+    width: 140px;
+    margin-left: 24px;
+    margin-top: 23px;
+  }
 }
 
 // содержимое таблицы прайслист
 .block-container {
-   display: flex;
-   flex-direction: column;
-   height: 354px;
-   flex-grow: 2;
-   border: 1px white solid;
-   border-radius: 10px;
-   background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 354px;
+  flex-grow: 2;
+  border: 1px white solid;
+  border-radius: 10px;
+  background-color: white;
 
-     
-   .block {
-     display: flex;
-     flex-direction: row;
-     height: 64px;
-     justify-content: space-between;
-    
+  .block {
+    display: flex;
+    flex-direction: row;
+    height: 64px;
+    justify-content: space-between;
 
-
-     
-     .block-name {
-       width: 494px;
-       margin-left:24px;
-       margin-top:23px;
-     }
-     .block-price {
-       width: 175px;
-       margin-left:24px;
-       margin-top:23px;
-     }
-     .block-time {
-       width: 111px;
-       margin-left:24px;
-       margin-top:23px;
-
-     }
-     .order-button{
-       width:140px;
-       margin-left:24px;
-       margin-top:23px;
-
-     }
-
-     
-   }
- }
+    .block-name {
+      width: 494px;
+      margin-left: 24px;
+      margin-top: 23px;
+    }
+    .block-price {
+      width: 175px;
+      margin-left: 24px;
+      margin-top: 23px;
+    }
+    .block-time {
+      width: 111px;
+      margin-left: 24px;
+      margin-top: 23px;
+    }
+    .order-button {
+      width: 140px;
+      margin-left: 24px;
+      margin-top: 23px;
+    }
+  }
+}
 
 //  разделительные линии в прайсе
-.block-divider{
-      display:block;
-      height:1px;
-      background-color:#EAEAEA;
-      margin-left: 24px;
-      margin-right: 24px;
-     }
+.block-divider {
+  display: block;
+  height: 1px;
+  background-color: #eaeaea;
+  margin-left: 24px;
+  margin-right: 24px;
+}
 
- .button-column {
-   margin-right: 24px;
+.button-column {
+  margin-right: 24px;
 
-   .order-button {
-     display: block;
-     height: 64px;
-     width: 119px;
-     padding: 0;
-   }
- }
+  .order-button {
+    display: block;
+    height: 64px;
+    width: 119px;
+    padding: 0;
+  }
+}
