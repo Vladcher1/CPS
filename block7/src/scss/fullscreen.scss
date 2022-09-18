@@ -30,10 +30,22 @@ html, body {
   li {
     list-style: none;
   }
-  .tech-repair {
+  .tech-repair {border-top: 2px solid #D9FFF5;
+    .brand-list-title{
+      
+      margin-top: 15px;
+        margin-bottom: 40px;
+      }
+ul.brands__list{
+  margin-bottom: 0;
+}
+    .second-title{
+      margin-bottom: 50px;
+    }
     .tech-container {
       display: flex;
       gap: 32px;
+      
     }
   }
 
