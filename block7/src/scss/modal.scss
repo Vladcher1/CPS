@@ -19,18 +19,16 @@
 .button-style:hover {
   filter: grayscale(0.2);
 }
-
 body {
   margin: 0;
-  height:inherit;
-  
+
 }
 .modal-style {
   width: 320px;
-  
   margin-right: auto;
   font-family: "TT Lakes";
   position: sticky;
+  height: auto;
   margin-bottom: 0;
   margin-left: 0;
   box-shadow: 10px 10px 30px 10px #0e185033;

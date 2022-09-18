@@ -1,8 +1,17 @@
 .page-footer{
-   background-color: green;
-   
+   border-top: 2px solid #D9FFF5;
+   display: flex;
+   color: #7E7E82;
+   justify-content: space-between;
+   height: 85px;
+   align-items: center;
+
+   .copyright-year{
+      margin-left: 31px;
+   }
+
+   .copyright-information{
+      margin-right: 31px;
+   }
 }
 
-footer{
-display:block;
-}

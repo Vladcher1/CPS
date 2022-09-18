@@ -1,16 +1,22 @@
+html, body {
+  min-height: 100%;
+}
+
 @media (min-width: 1439px) {
   body {
-    margin:0;
+    margin: 0;
   }
 
   .flexbox-container {
     display: flex;
+    
   }
 
   .modal-style {
     width: 308px;
     box-shadow: none;
     background-color: white;
+    
   }
   .page-main {
     margin-left: 308px;
@@ -56,8 +62,6 @@
     }
   }
 
-  
-
   .page-footer {
     .copyright {
       display: flex;
@@ -67,7 +71,6 @@
 
   .nds-text {
     width: 421px;
-    height: 60px;
     margin-top: 32px;
     margin-left: 32px;
 
