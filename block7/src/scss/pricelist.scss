@@ -1,29 +1,36 @@
+.price{
+.brand-list-title{
+  margin-bottom: 47px;
+  margin-left: 32px;
+}
+}
 // заголовок таблицы прайслист
 .block {
   display: flex;
   flex-direction: row;
-  height: 64px;
+  height: 16px;
+  margin-bottom: 16px;
   justify-content: space-between;
-
+  margin-left: 0;
+  margin-right: 0;
+  color: #7e7e82;
   .block-name {
     width: 494px;
-    margin-left: 24px;
-    margin-top: 23px;
+    margin-left: 56px;
+    vertical-align: bottom;
+
   }
   .block-price {
     width: 175px;
-    margin-left: 24px;
-    margin-top: 23px;
   }
   .block-time {
     width: 111px;
-    margin-left: 24px;
-    margin-top: 23px;
+
   }
+
   .order-button {
     width: 140px;
     margin-left: 24px;
-    margin-top: 23px;
   }
 }
 
@@ -31,18 +38,23 @@
 .block-container {
   display: flex;
   flex-direction: column;
-  height: 354px;
+  height: 324px;
   flex-grow: 2;
   border: 1px white solid;
   border-radius: 10px;
   background-color: white;
+  margin-left: 32px;
+  margin-right: 32px;
 
   .block {
     display: flex;
     flex-direction: row;
     height: 64px;
     justify-content: space-between;
-
+    margin-left: 0;
+    margin-right: 0;
+    color: #1b1c21;
+    
     .block-name {
       width: 494px;
       margin-left: 24px;
@@ -62,7 +74,9 @@
     .order-button {
       width: 140px;
       margin-left: 24px;
-      margin-top: 23px;
+      margin-top: auto;
+      margin-bottom: auto;
+
     }
   }
 }
@@ -84,5 +98,14 @@
     height: 64px;
     width: 119px;
     padding: 0;
+  
+  }
+}
+
+.nds-text{
+  margin-bottom: 57px;
+  .nds-text__img{
+    height:10px;
+    width:6px;
   }
 }
