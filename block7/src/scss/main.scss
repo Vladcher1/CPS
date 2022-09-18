@@ -600,6 +600,7 @@ ul {
 .brands {
   display: flex;
   flex-direction: column;
+  border-top: 2px solid #D9FFF5;
   li {
     list-style: none;
   }
@@ -631,6 +632,7 @@ ul {
 }
 .second-title:last-child {
   margin-left: 0;
+  margin-bottom: 50px;
 }
 
 .hidden {

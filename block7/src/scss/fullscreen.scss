@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   min-height: 100%;
 }
 
@@ -9,14 +10,12 @@ html, body {
 
   .flexbox-container {
     display: flex;
-    
   }
 
   .modal-style {
     width: 308px;
     box-shadow: none;
     background-color: white;
-    
   }
   .page-main {
     margin-left: 308px;
@@ -30,22 +29,21 @@ html, body {
   li {
     list-style: none;
   }
-  .tech-repair {border-top: 2px solid #D9FFF5;
-    .brand-list-title{
-      
+  .tech-repair {
+    border-top: 2px solid #d9fff5;
+    .brand-list-title {
       margin-top: 15px;
-        margin-bottom: 40px;
-      }
-ul.brands__list{
-  margin-bottom: 0;
-}
-    .second-title{
+      margin-bottom: 40px;
+    }
+    ul.brands__list {
+      margin-bottom: 0;
+    }
+    .second-title {
       margin-bottom: 50px;
     }
     .tech-container {
       display: flex;
       gap: 32px;
-      
     }
   }
 
