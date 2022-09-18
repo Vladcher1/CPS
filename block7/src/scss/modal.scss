@@ -21,14 +21,21 @@
 }
 body {
   margin: 0;
-
 }
+
+.modal-container{
+  display:block;
+  position: relative;
+}
+
 .modal-style {
   width: 320px;
   margin-right: auto;
   font-family: "TT Lakes";
-  position: sticky;
-  height: auto;
+  position:sticky;
+  top:0;
+  bottom:0;
+  left:0;
   margin-bottom: 0;
   margin-left: 0;
   box-shadow: 10px 10px 30px 10px #0e185033;
@@ -184,3 +191,4 @@ body {
     }
   }
 }
+

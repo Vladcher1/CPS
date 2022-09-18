@@ -3,6 +3,7 @@ import '../scss/modal.scss';
 import '../scss/fullscreen.scss';
 import '../scss/pricelist.scss';
 import '../scss/footer.scss';
+import '../scss/modal-report.scss';
 
 let swiper = new Swiper('.swiper', {
   // Optional parameters
