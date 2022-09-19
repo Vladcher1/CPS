@@ -1,17 +1,15 @@
 
 
-.modal-report {
-  background-color: #FFFFFF;
+.modal-order {
+  background-color: #ffffff;
   width: 440px;
-  min-height:100%;
+  min-height: 100%;
   // position: sticky;
-  position:absolute;
+  position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
-  left:auto;
-  border-left: 1px solid #D9FFF5;
-
+  border-left: 1px solid #d9fff5;
 
   .modal-report__highlight {
     display: flex;
@@ -24,15 +22,16 @@
   }
 }
 
-.inputs{
-  margin:0 32px;
+.inputs {
+  margin: 0 32px;
 }
 
-input[type="text"], input[type="textarea"]{
+input[type='text'],
+input[type='textarea'] {
   font-family: inherit; /* 1 */
   font-size: inherit; /* 1 */
   line-height: inherit; /* 1 */
-  border-color: #EAEAEA;
+  border-color: #eaeaea;
   margin-bottom: 16px;
   display: block;
   width: 376px;
@@ -51,21 +50,20 @@ input[type="text"], input[type="textarea"]{
   box-sizing: border-box;
 }
 
-.personal-data{
+.personal-data {
   margin: 0 32px;
   font-size: 14px;
-  color: #7E7E82;
-  margin-top:16px;
-  margin-bottom:23px;
+  color: #7e7e82;
+  margin-top: 16px;
+  margin-bottom: 23px;
 }
 
-
-.inputs__pink-text{
-  color:#FF3E79;
+.inputs__pink-text {
+  color: #ff3e79;
 }
 
-.submit-button{
+.submit-button {
   margin-right: 32px;
   margin-left: 272px;
-  padding:0;
+  padding: 0;
 }
