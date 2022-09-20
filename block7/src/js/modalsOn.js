@@ -7,16 +7,19 @@ const closeButton = document.querySelector('.close-button');
 
 const container = document.querySelector('.flexbox-container');
 
-
+// for (let modal of modals){
 chatButton.addEventListener('click', function () {
   modal.classList.toggle('hidden');
-  container.classList.toggle('container-visually ');
-
+  container.classList.toggle('container-visually');
 });
+
 
 callButton.addEventListener('click', function () {
    modal.classList.toggle('hidden');
+   
+  container.classList.toggle('container-visually');
  });
+// }
 
  closeButton.addEventListener('click', function () {
   modal.classList.toggle('hidden');
