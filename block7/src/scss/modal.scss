@@ -25,17 +25,17 @@ body {
 
 .modal-container{
   display:block;
-  position: relative;
+  position: sticky;
+  top:0;
+  bottom: 0;
+height: auto;
 }
 
 .modal-style {
   width: 320px;
   margin-right: auto;
   font-family: "TT Lakes";
-  position:sticky;
-  top:0;
-  bottom:0;
-  left:0;
+ min-height: 100vh;
   margin-bottom: 0;
   margin-left: 0;
   box-shadow: 10px 10px 30px 10px #0e185033;

@@ -1,16 +1,18 @@
 html,
 body {
-  min-height: 100%;
+  min-height: 120vh;
 }
 
 @media (min-width: 1439px) {
   body {
     margin: 0;
-
+    position:relative;
+   
   }
 
   .flexbox-container {
     display: flex;
+    min-height: 190vh;
   }
 
   .modal-style {
@@ -91,3 +93,5 @@ body {
     }
   }
 }
+
+
