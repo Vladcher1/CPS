@@ -1,31 +1,26 @@
-const chatButton = document.querySelector('.report-button');
-const modalReport = document.querySelector('.modal-report');
-const callButton = document.querySelector('.order-button');
-const modalOrder = document.querySelector('.modal-order');
-const modal = document.querySelector('.modal');
-const modal1 = document.querySelector('.modal-1');
-const closeButton = document.querySelector('.close-button');
-console.log(modal1);
-const container = document.querySelector('.flexbox-container');
+const chatButton = document.querySelector('.report-button')
+const callButton = document.querySelector('.order-button')
+const modal = document.querySelector('.modal')
+const modal1 = document.querySelector('.modal-1')
+const closeButton = document.querySelector('.close-button')
+const closeButtonOrder = document.querySelector('.close-button-order')
 
-// for (let modal of modals){
 chatButton.addEventListener('click', function () {
-  modal.classList.toggle('hidden');
-  container.classList.toggle('container-visually');
-});
-
+  modal.classList.toggle('hidden')
+})
 
 callButton.addEventListener('click', function () {
-   modal1.classList.toggle('hidden');
-   
-  container.classList.toggle('container-visually');
- });
-// }
+  modal1.classList.toggle('hidden')
+})
 
+closeButton.addEventListener('click', function () {
+  if (!modal.classList.contains('hidden')) {
+    modal.classList.toggle('hidden')
+  }
+})
 
-const chooseButton 
- closeButton.addEventListener('click', function () {
-  modal.classList.toggle('hidden');
-  container.classList.toggle('container-visually');
-
-});
+closeButtonOrder.addEventListener('click', function () {
+  if (!modal1.classList.contains('hidden')) {
+    modal1.classList.add('hidden')
+  }
+})
