@@ -270,6 +270,7 @@ ul {
   }
   .page-main__buttons {
     display: flex;
+    width: inherit;
   }
   .page-main__buttons__button-5 {
     display: none;
@@ -450,9 +451,6 @@ ul {
   .page-header__icon-profile {
     display: none;
   }
-  .page-main {
-    position: absolute;
-  }
   .page-main__buttons {
     display: flex;
     flex-wrap: wrap;
@@ -486,6 +484,7 @@ ul {
     display: flex;
     flex-direction: row;
     flex: 50% 50%;
+    margin-bottom: 50px;
   }
   .page-main .main-information .text {
     flex: 50%;
@@ -511,6 +510,7 @@ ul {
 .brands {
   display: flex;
   flex-direction: column;
+  border-top: 2px solid #D9FFF5;
 }
 .brands li {
   list-style: none;
@@ -544,8 +544,9 @@ ul {
 
 .second-title:last-child {
   margin-left: 0;
+  margin-bottom: 50px;
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }

@@ -192,3 +192,8 @@ height: auto;
   }
 }
 
+@media (min-width: 767.95px){
+  .modal-container{
+    display:none;
+  }
+}

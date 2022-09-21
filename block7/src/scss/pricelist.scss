@@ -110,3 +110,31 @@
     width:6px;
   }
 }
+
+@media (min-width: 767.95px){
+  .block{
+    display: flex;
+    flex-direction: row;
+    height: 14px;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    color: #1b1c21;
+    font-size: 14px;
+line-height: 16px;
+    .order-button{
+      width:131px;
+    }
+}
+  
+.block-container{
+min-width:720px;
+height:324px;
+box-sizing: content-box;
+.block{
+  height:64px;
+  font-size: 14px;
+  margin:0;
+}
+}
+}

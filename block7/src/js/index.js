@@ -5,6 +5,8 @@ import '../scss/pricelist.scss';
 import '../scss/footer.scss';
 import '../scss/modal-report.scss';
 import './modalsOn.js';
+import './openTechRepair.js';
+import '../scss/techRepair.scss';
 
 
 let swiper = new Swiper('.swiper', {
@@ -63,86 +65,6 @@ const hiddenBrand = divSwiperWrapper.children
 const media1120 = window.matchMedia('(min-width: 1120px)')
 const media768 = window.matchMedia('(min-width: 768px)')
 
-// let amountOfElements = function () {
-//   window.addEventListener("resize", function () {
-//     if (media768.matches && !media1120.matches) {
-//       let elements = 6;
-
-//       // первые 6 элементов открыты
-//       for (let i = 0; i <= elements - 1; i++) {
-//         hiddenBrand[i].classList.remove("hidden");
-//       }
-
-//       // при нажатии на кнопку у всех элементов пропадает hidden
-//       button.addEventListener("click", function () {
-//         if (brandsList.classList.contains("button-close")) {
-//           brandsList.classList.add("button-open");
-//           brandsList.classList.remove("button-close");
-
-//           for (let i = 0; i < hiddenBrand.length; i++) {
-//             hiddenBrand[i].classList.remove("hidden");
-//             brandsButtonText.textContent = "Скрыть";
-//           }
-//         } else {
-//           brandsList.classList.add("button-close");
-//           brandsList.classList.remove("button-open");
-
-//           for (let i = 6; i < hiddenBrand.length; i++) {
-//             hiddenBrand[i].classList.add("hidden");
-//             brandsButtonText.textContent = "Показать всё";
-//           }
-//         }
-//       });
-//     } else if (media1120.matches) {
-//       let elements = 8;
-
-//       // первые 8 элементов открыты
-//       for (let i = 0; i <= elements - 1; i++) {
-//         hiddenBrand[i].classList.remove("hidden");
-//       }
-
-//       // при нажатии на кнопку у всех элементов пропадает hidden
-//       button.addEventListener("click", function () {
-//         if (icon.classList.contains("button-not-rotate")) {
-//           icon.classList.add("button-rotate");
-//           icon.classList.remove("button-not-rotate");
-//         } else {
-//           icon.classList.add("button-not-rotate");
-//           icon.classList.remove("button-rotate");
-//         }
-
-//         if (brandsList.classList.contains("button-close")) {
-//           brandsList.classList.remove("button-close");
-//           brandsList.classList.add("button-open");
-
-//           for (let i = 0; i < hiddenBrand.length; i++) {
-//             hiddenBrand[i].classList.remove("hidden");
-//             brandsButtonText.textContent = "Скрыть";
-//           }
-//         } else {
-//           brandsList.classList.add("button-close");
-//           brandsList.classList.remove("button-open");
-
-//           for (let i = 8; i < hiddenBrand.length; i++) {
-//             hiddenBrand[i].classList.add("hidden");
-//             brandsButtonText.textContent = "Показать всё";
-//           }
-//         }
-//       });
-//     }
-//   });
-// };
-
-// amountOfElements();
-
-// if (media768.matches && !media1120.matches) {
-//   for (let i = 0; i <= 6; i++) {
-//     hiddenBrand[i].classList.remove("hidden");
-//   }
-//  }else if (media1120.matches){
-//   for (let i = 0; i < hiddenBrand.length; i++) {
-//     hiddenBrand[i].classList.remove("hidden");
-//   }
 
 // код начинается тут
 

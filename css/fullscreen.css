@@ -1,24 +1,43 @@
+html,
+body {
+  min-height: 120vh;
+}
+
 @media (min-width: 1439px) {
   body {
-    width: 1440px;
+    margin: 0;
+    position: relative;
+  }
+  .modal-container {
+    display: block;
   }
   .flexbox-container {
     display: flex;
+    min-height: 190vh;
   }
   .modal-style {
     width: 308px;
     box-shadow: none;
     background-color: white;
   }
-  .page-main {
-    width: 1120px;
-    margin-left: 308px;
-  }
   .modal-header .button-style:first-child {
     display: none;
   }
   li {
     list-style: none;
+  }
+  .tech-repair {
+    border-top: 2px solid #d9fff5;
+  }
+  .tech-repair .brand-list-title {
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+  .tech-repair ul.brands__list {
+    margin-bottom: 0;
+  }
+  .tech-repair .second-title {
+    margin-bottom: 50px;
   }
   .tech-repair .tech-container {
     display: flex;
@@ -44,22 +63,12 @@
   .price-container .price-column {
     margin-right: 122px;
   }
-  .button-column {
-    margin-right: 24px;
-  }
-  .button-column .order-button {
-    display: block;
-    height: 64px;
-    width: 119px;
-    padding: 0;
-  }
   .page-footer .copyright {
     display: flex;
     justify-content: space-between;
   }
   .nds-text {
     width: 421px;
-    height: 60px;
     margin-top: 32px;
     margin-left: 32px;
   }

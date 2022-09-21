@@ -1,0 +1,19 @@
+@media (min-width: 767.95px) {
+  .tech-repair {
+   border-top: 2px solid #D9FFF5;
+    .brands__list {
+      list-style: none;
+    }
+    .tech-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .brand-style {
+      height: 160px;
+      img {
+        height: 160px;
+      }
+    }
+  }
+}

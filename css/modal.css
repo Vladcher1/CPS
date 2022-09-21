@@ -17,17 +17,22 @@
 
 body {
   margin: 0;
-  width: 767px;
-  min-height: 100vh;
+}
+
+.modal-container {
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: auto;
 }
 
 .modal-style {
   width: 320px;
-  min-height: 100vh;
   margin-right: auto;
   font-family: "TT Lakes";
-  position: -webkit-sticky;
-  position: sticky;
+  min-height: 100vh;
   margin-bottom: 0;
   margin-left: 0;
   box-shadow: 10px 10px 30px 10px rgba(14, 24, 80, 0.2);
@@ -168,4 +173,10 @@ body {
 }
 .modal-style .modal-footer .modal-footer__copy .lang .button-style:hover {
   opacity: 0.5;
+}
+
+@media (min-width: 767.95px) {
+  .modal-container {
+    display: none;
+  }
 }
