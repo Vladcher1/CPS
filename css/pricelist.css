@@ -102,9 +102,18 @@
 
 @media (min-width: 767.95px) {
   .block {
-    height: 32px;
+    display: flex;
+    flex-direction: row;
+    height: 14px;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    color: #1b1c21;
     font-size: 14px;
-    margin: 0;
+    line-height: 16px;
+  }
+  .block .order-button {
+    width: 131px;
   }
   .block-container {
     min-width: 720px;
