@@ -18,6 +18,8 @@ if (media768.matches && !media1120.matches) {
 
 // при нажатии на кнопку раскрыть все открываются все
 // элементы
+
+if (media768.matches && !media1120.matches){
 buttonClose.addEventListener('click', function () {
   if (list.classList.contains('button-close')) {
     list.classList.remove('button-close')
@@ -41,3 +43,4 @@ buttonClose.addEventListener('click', function () {
     }
   }
 })
+};
