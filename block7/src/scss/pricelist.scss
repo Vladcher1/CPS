@@ -109,60 +109,126 @@
 
 @media (min-width: 767.95px) {
   .block {
-    min-width: 806px;
-    justify-content: center;
-    height: 16px;
+    height: 32px;
+    margin: 0 24px;
+    box-sizing: content-box;
     font-size: 14px;
-    line-height: 16px;
-    margin-left: 32px;
-    margin-right: 32px;
-    .block-name{
-      margin:0;
-      margin-left: 24px;
-      min-width:412px;
 
+    .block-name {
+      margin-left: 16px;
+      flex-shrink: 1;
+      min-width: 348px;
+    }
+    .block-price {
+      flex-shrink: 1;
+      margin-left: 16px;
+      min-width: 74px;
+    }
+    .block-time {
+      margin-left: 0;
+      flex-shrink: 0;
+      margin-left: 22px;
+      min-width: 81px;
     }
     .order-button {
-      width: 131px;
-      margin-right: 24px;
+      margin: 0 16px 0 16px;
+      padding: 0;
+      width: 140px;
+      visibility: hidden;
     }
+    
   }
 
   .block-container {
-    min-width: 720px;
-    height: 324px;
+    min-width: 740px;
     box-sizing: content-box;
-    margin-left: 24px;
     margin-right: 24px;
+    margin-left: 24px;
+    font-size: 14px;
 
     .block {
       height: 64px;
-      font-size: 14px;
       margin: 0;
-
-    .block-name{
-      margin-left: 16px;
-      width: max-content;
       box-sizing: content-box;
 
+      .block-name {
+        margin-left: 16px;
+        flex-shrink: 1;
+        min-width: 348px;
+      }
+      .block-price {
+        flex-shrink: 1;
+        margin-left: 16px;
+        min-width: 74px;
+      }
+      .block-time {
+        margin-left: 0;
+        flex-shrink: 0;
+        margin-left: 22px;
+        min-width: 81px;
+      }
+      .order-button {
+        margin: 0 16px 0 16px;
+        padding: 0;
+        visibility: visible;
+      }
     }
-    .block-price{
-      margin-left: 0;
-      width: 96px;
-      box-sizing: border-box;
-    }
-    .block-time{
-      margin-left: 0;
-      width: 72px;
-    }
-
-    .order-button{
-margin-left: 0;
-margin-right: 0;
-padding:0;
-    }
-    }
-
-  
   }
+
+  //   .block {
+  //     min-width: 806px;
+  //     justify-content: center;
+  //     height: 16px;
+  //     font-size: 14px;
+  //     line-height: 16px;
+  //     margin-left: 32px;
+  //     margin-right: 32px;
+  //     .block-name{
+  //       margin:0;
+  //       margin-left: 24px;
+  //       min-width:412px;
+
+  //     }
+  //     .order-button {
+  //       width: 131px;
+  //       margin-right: 24px;
+  //     }
+  //   }
+
+  //   .block-container {
+  //     min-width: 720px;
+  //     height: 324px;
+  //     box-sizing: content-box;
+  //     margin-left: 24px;
+  //     margin-right: 24px;
+
+  //     .block {
+  //       height: 64px;
+  //       font-size: 14px;
+  //       margin: 0;
+
+  //     .block-name{
+  //       margin-left: 16px;
+  //       width: max-content;
+  //       box-sizing: content-box;
+
+  //     }
+  //     .block-price{
+  //       margin-left: 0;
+  //       width: 96px;
+  //       box-sizing: border-box;
+  //     }
+  //     .block-time{
+  //       margin-left: 0;
+  //       width: 72px;
+  //     }
+
+  //     .order-button{
+  // margin-left: 0;
+  // margin-right: 0;
+  // padding:0;
+  //     }
+  //     }
+
+  // }
 }
