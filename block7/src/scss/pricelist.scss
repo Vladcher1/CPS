@@ -108,6 +108,10 @@
 }
 
 @media (min-width: 767.95px) {
+
+  body{
+    font-size: 14px;
+  }
   .block {
     height: 32px;
     margin: 0 24px;
@@ -136,7 +140,6 @@
       width: 140px;
       visibility: hidden;
     }
-    
   }
 
   .block-container {
@@ -175,60 +178,22 @@
     }
   }
 
-  //   .block {
-  //     min-width: 806px;
-  //     justify-content: center;
-  //     height: 16px;
-  //     font-size: 14px;
-  //     line-height: 16px;
-  //     margin-left: 32px;
-  //     margin-right: 32px;
-  //     .block-name{
-  //       margin:0;
-  //       margin-left: 24px;
-  //       min-width:412px;
+  .nds-text {
+    margin: 0 24px;
+    width: 421px;
+    font-size: 14px;
+  }
+  .second-title {
+    padding: 0;
+    align-items: center;
+    span {
+      margin-right: 9.4px;
+    }
 
-  //     }
-  //     .order-button {
-  //       width: 131px;
-  //       margin-right: 24px;
-  //     }
-  //   }
-
-  //   .block-container {
-  //     min-width: 720px;
-  //     height: 324px;
-  //     box-sizing: content-box;
-  //     margin-left: 24px;
-  //     margin-right: 24px;
-
-  //     .block {
-  //       height: 64px;
-  //       font-size: 14px;
-  //       margin: 0;
-
-  //     .block-name{
-  //       margin-left: 16px;
-  //       width: max-content;
-  //       box-sizing: content-box;
-
-  //     }
-  //     .block-price{
-  //       margin-left: 0;
-  //       width: 96px;
-  //       box-sizing: border-box;
-  //     }
-  //     .block-time{
-  //       margin-left: 0;
-  //       width: 72px;
-  //     }
-
-  //     .order-button{
-  // margin-left: 0;
-  // margin-right: 0;
-  // padding:0;
-  //     }
-  //     }
-
-  // }
+  }
+  .nds-text__img{
+   height: 16px;
+   vertical-align: bottom;
+  }
+  
 }
