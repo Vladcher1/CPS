@@ -5,15 +5,26 @@ console.log(closeButton);
 
 menuButton.addEventListener('click', function () {
 
-   modal.classList.toggle('hidden');
+   modal.classList.remove('hidden');
 })
 
-menuButton.addEventListener('click', function () {
+// menuButton.addEventListener('click', function () {
 
-   modal.style.display = "block";
-})
+//    modal.style.display = "block";
+// })
+
+// closeButton.addEventListener('click', function () {
+
+//    modal.style.display = "none";
+// })
 
 closeButton.addEventListener('click', function () {
 
-   modal.style.display = "none";
-})
+      modal.classList.add('hidden');
+   })
+
+   const media1440 = window.matchMedia('(min-width: 1440px)');
+
+   if (media1440.matches){
+      modal.classList.remove('hidden');
+   }
