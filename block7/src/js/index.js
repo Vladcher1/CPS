@@ -45,6 +45,7 @@ const swiperSlide = document.querySelectorAll('.swiper-slide')
 const brandsButton = document.querySelector('.brands-button')
 const brandsButtonText = brandsButton.querySelector('p')
 const icon = document.querySelector('.brands-button-rotate')
+const swiperPagination2 = document.querySelector('.swiper-pagination2');
 
 const mediaQuery = window.matchMedia('(max-width: 767px)')
 
@@ -120,3 +121,44 @@ button.addEventListener('click', function () {
     icon.classList.remove('button-rotate')
   }
 })
+
+
+let mySwiper = new Swiper('.swiper2', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 16,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination2',
+    clickable: true
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar'
+  }
+})
+
+if (!mediaQuery.matches) {
+  mySwiper.destroy()
+  brandsList.classList.remove('swiper')
+  brandsList.classList.remove('brands__list')
+  divSwiperWrapper.classList.remove('swiper-wrapper')
+  divSwiperWrapper.classList.add('brands__list')
+swiperPagination2.classList.add('hidden');
+
+  for (let elem of brand) {
+    elem.classList.add('brand')
+    elem.classList.remove('swiper-slide')
+  }
+}
+

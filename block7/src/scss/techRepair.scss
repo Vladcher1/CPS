@@ -17,3 +17,34 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px){
+.tech-repair{
+  display:flex;
+  flex-direction: column;
+  
+}
+.tech-container{
+  list-style: none;
+}
+.swiper-pagination2{
+  text-align: center;
+}
+
+.block{
+  flex-direction: column;
+  width:260px;
+  height:200px;
+  background-color: white;
+}
+.block-container{
+  flex-direction: row;
+  flex-wrap: nowrap;
+  .block{
+    flex-direction: column;
+    width:260px;
+    height:200px;
+    background-color: white;
+  }
+}
+}
