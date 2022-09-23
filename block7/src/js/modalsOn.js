@@ -24,3 +24,4 @@ closeButtonOrder.addEventListener('click', function () {
     modal1.classList.add('hidden')
   }
 })
+

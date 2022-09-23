@@ -7,6 +7,7 @@ import '../scss/modal-report.scss';
 import './modalsOn.js';
 import './openTechRepair.js';
 import '../scss/techRepair.scss';
+import './menuOn.js';
 
 
 let swiper = new Swiper('.swiper', {
