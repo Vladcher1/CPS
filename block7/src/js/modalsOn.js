@@ -1,27 +1,32 @@
 const chatButton = document.querySelector('.report-button')
 const callButton = document.querySelector('.order-button')
-const modal = document.querySelector('.modal')
-const modal1 = document.querySelector('.modal-1')
-const closeButton = document.querySelector('.close-button')
-const closeButtonOrder = document.querySelector('.close-button-order')
+const modalList = document.querySelectorAll('.modal')
+const closeButtons = document.querySelectorAll('.close-button')
+
+modalOrder = modalList[0]
+modalReport = modalList[1]
+
+closeButtonreport = closeButtons[1];
+closeButtonOrder = closeButtons[0]
+
+console.log(closeButtonreport)
 
 chatButton.addEventListener('click', function () {
-  modal.classList.toggle('hidden')
+  modalOrder.classList.remove('hidden')
 })
 
 callButton.addEventListener('click', function () {
-  modal1.classList.toggle('hidden')
+  modalReport.classList.remove('hidden')
 })
 
-closeButton.addEventListener('click', function () {
-  if (!modal.classList.contains('hidden')) {
-    modal.classList.toggle('hidden')
+closeButtonreport.addEventListener('click', function () {
+  if (!modalReport.classList.contains('hidden')) {
+    modalReport.classList.add('hidden')
   }
 })
 
 closeButtonOrder.addEventListener('click', function () {
-  if (!modal1.classList.contains('hidden')) {
-    modal1.classList.add('hidden')
+  if (!modalOrder.classList.contains('hidden')) {
+    modalOrder.classList.add('hidden')
   }
 })
-
