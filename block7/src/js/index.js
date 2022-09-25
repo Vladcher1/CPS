@@ -123,7 +123,7 @@ button.addEventListener('click', function () {
   }
 })
 
-let mySwiper = new Swiper('.swiper2', {
+let swiperTech = new Swiper('.swiper2', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -154,7 +154,7 @@ const swiperPaginationTech = document.querySelector('.swiper-pagination2')
 
 // убираем свайпер у tech
 if (!mediaQuery.matches) {
-  mySwiper.destroy()
+  swiperTech.destroy()
   swiperTechContainer.classList.remove('swiper2')
   swiperTechContainer.classList.remove('brands__list')
   swiperTechWrapper.classList.remove('swiper-wrapper')

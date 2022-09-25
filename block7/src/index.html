@@ -295,6 +295,7 @@
 
       <!-- цена на услуги -->
       <section class="price">
+        
         <h2 class="brand-list-title">Цены на услуги</h2>
 
         <div class="price__table-title table-title">
@@ -303,10 +304,10 @@
           <div class="table-title__time">Срок</div>
           <button class="table-title__order-button"><img src="src/img/group 10.svg"></button>
         </div>
+<div class="swiper-price">
+        <div class="table-container swiper-wrapper">
 
-        <div class="table-container">
-
-          <div class="price__product product">
+          <div class="price__product product swiper-slide">
             <div class="product__name">Диагностика</div>
             <div class="product__price">Бесплатно</div>
             <div class="product__time">30 мин</div>
@@ -317,7 +318,7 @@
           </div>
           <div class="block-divider"></div>
 
-          <div class="product price__product">
+          <div class="product price__product swiper-slide">
             <div class="product__name">Замена дисплея</div>
             <div class="product__price">1000р</div>
             <div class="product__time">30-120 мин</div>
@@ -328,7 +329,7 @@
           <div class="block-divider"></div>
 
 
-          <div class="product price__product">
+          <div class="product price__product swiper-slide">
             <div class="product__name">Замена полифонического динамика</div>
             <div class="product__price">1000р</div>
             <div class="product__time">30-120 мин</div>
@@ -338,7 +339,7 @@
           </div>
           <div class="block-divider"></div>
 
-          <div class="product price__product">
+          <div class="product price__product swiper-slide">
             <div class="product__name">Тестирование с выдачей технического заключения</div>
             <div class="product__price">1000р</div>
             <div class="product__time">30-120 мин</div>
@@ -348,7 +349,7 @@
           </div>
           <div class="block-divider"></div>
 
-          <div class="product price__product">
+          <div class="product price__product swiper-slide">
             <div class="product__name">Тестирование с выдачей технического заключения</div>
             <div class="product__price">1000р</div>
             <div class="product__time">30-120 мин</div>
@@ -357,15 +358,17 @@
             </button>
           </div>
         </div>
+        <div class="swiper-pagination-price"></div>
+        </div>
 
 
 
-        <div class="nds-text">
+        <div class="price__nds-text">
           <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого
             предложения на постоянное обслуживание, оставьте заявку.</p>
           <button class="second-title  button-close brands-button">
             <span>Получить коммерческое предложение</span>
-            <img class='nds-text__img' src="/img/Line.svg">
+            <img class='price__nds-img' src="/img/Line.svg">
           </button>
         </div>
 

@@ -18,8 +18,6 @@ const dividers = tableContainer.querySelectorAll('.block-divider')
 
 if (mediaQuery.matches) {
   // создаю дивы с тайтлами
-
-  // for (let i = 0; i < blocks.length - 1; i++) {
   const divName = document.createElement('div')
   divName.className = 'block-title-name'
   divName.innerHTML = 'Ремонтные услуги'
@@ -40,50 +38,62 @@ if (mediaQuery.matches) {
 
   // ставлю новые дивы перед нужными блоками
 
-  for (let i = 0; i < products.length -1; i++) {
-    //  for (let element of blocks) {
+  for (let i = 0; i < products.length; i++) {
 
-      const divName = document.createElement('div')
-      divName.className = 'block-title-name'
-      divName.innerHTML = 'Ремонтные услуги'
+    const divName = document.createElement('div')
+    divName.className = 'block-title-name'
+    divName.innerHTML = 'Ремонтные услуги'
 
-      const divPrice = document.createElement('div')
-      divPrice.className = 'block-title-price'
-      divPrice.innerHTML = 'Цена'
+    const divPrice = document.createElement('div')
+    divPrice.className = 'block-title-price'
+    divPrice.innerHTML = 'Цена'
 
-      const divTime = document.createElement('div')
-      divTime.className = 'block-title-time'
-      divTime.innerHTML = 'Срок'
+    const divTime = document.createElement('div')
+    divTime.className = 'block-title-time'
+    divTime.innerHTML = 'Срок'
 
     productsName[i].before(divName)
     productsPrice[i].before(divPrice)
-     productsTime[i].before(divTime)
+    productsTime[i].before(divTime)
      
   }
-  //   }
-// }
+}
+  let mySwiperPrice = new Swiper('.swiper-price', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 16,
 
-// let mySwiperPrice = new Swiper('.swiperPrice', {
-//   // Optional parameters
-//   direction: 'horizontal',
-//   loop: true,
-//   slidesPerView: 'auto',
-//   spaceBetween: 16,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination-price',
+      clickable: true
+    },
 
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination2',
-//     clickable: true
-//   },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
 
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev'
-//   },
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar'
+    }
+  })
 
-//   // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar'
-//   }
-// })
+
+const swiperPriceContainer = document.querySelector('.swiper-price')
+const swiperPaginationPrice = document.querySelector('.swiper-pagination-price');
+// убираем свайпер у tech
+if (!mediaQuery.matches) {
+  mySwiperPrice.destroy()
+  swiperPriceContainer.classList.remove('swiper2')
+  tableContainer.classList.remove('swiper-wrapper')
+  swiperPaginationPrice.classList.add('hidden')
+
+  for (let elem of products) {
+    elem.classList.remove('swiper-slide')
+  }
+}
