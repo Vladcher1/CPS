@@ -1,14 +1,13 @@
-import '../scss/main.scss';
-import '../scss/modal.scss';
-import '../scss/fullscreen.scss';
-import '../scss/pricelist.scss';
-import '../scss/footer.scss';
-import '../scss/modal-report.scss';
-import './modalsOn.js';
-import './openTechRepair.js';
-import '../scss/techRepair.scss';
-import './menuOn.js';
-
+import '../scss/main.scss'
+import '../scss/modal.scss'
+import '../scss/fullscreen.scss'
+import '../scss/pricelist.scss'
+import '../scss/footer.scss'
+import '../scss/modal-report.scss'
+import './modalsOn.js'
+import './openTechRepair.js'
+import '../scss/techRepair.scss'
+import './menuOn.js'
 
 let swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -37,24 +36,20 @@ let swiper = new Swiper('.swiper', {
 
 // убираем классы слайдера и добавляем brand элементам списка, убрать brands__list у ул и добавить диву внизу
 
-const brands = document.querySelector('.brands')
-const brandsList = brands.querySelector('.brands__list')
-const divSwiperWrapper = brandsList.querySelector('div')
-const brand = brandsList.querySelectorAll('li')
-const swiperSlide = document.querySelectorAll('.swiper-slide')
-const brandsButton = document.querySelector('.brands-button')
-const brandsButtonText = brandsButton.querySelector('p')
 const icon = document.querySelector('.brands-button-rotate')
-const swiperPagination2 = document.querySelector('.swiper-pagination2');
-
+const swiperContainer = document.querySelector('.swiper')
+const swiperWrapper = document.querySelector('.swiper-wrapper')
+const swiperWrapperChildren = swiperWrapper.querySelectorAll('.swiper-slide')
 const mediaQuery = window.matchMedia('(max-width: 767px)')
+const brand = swiperWrapper.querySelectorAll('li')
 
+// если не 320, тогда отключаем свайпер
 if (!mediaQuery.matches) {
   swiper.destroy()
-  brandsList.classList.remove('swiper')
-  brandsList.classList.remove('brands__list')
-  divSwiperWrapper.classList.remove('swiper-wrapper')
-  divSwiperWrapper.classList.add('brands__list')
+  swiperContainer.classList.remove('swiper')
+  swiperWrapper.classList.add('brands__list')
+  swiperWrapper.classList.remove('swiper-wrapper')
+  swiperContainer.classList.remove('brands__list')
 
   for (let elem of brand) {
     elem.classList.add('brand')
@@ -63,39 +58,42 @@ if (!mediaQuery.matches) {
 }
 
 const button = document.querySelector('.brands-button')
-const hiddenBrand = divSwiperWrapper.children
+const hiddenBrand = document.querySelectorAll('.brand')
 const media1120 = window.matchMedia('(min-width: 1120px)')
 const media768 = window.matchMedia('(min-width: 768px)')
+const brandsButtonText = button.querySelector('p')
 
-
-// код начинается тут
-
+// показываем 6 элементов на 768
 if (media768.matches && !media1120.matches) {
   for (let i = 0; i < 6; i++) {
     hiddenBrand[i].classList.remove('hidden')
   }
+  // показываем 8 элементов на 1120
 } else if (media1120.matches) {
   for (let i = 0; i < 8; i++) {
     hiddenBrand[i].classList.remove('hidden')
   }
+  // при 320 убираем у всех hidden
 } else if (mediaQuery.matches) {
-  for (let i = 0; i < hiddenBrand.length - 1; i++) {
-    hiddenBrand[i].classList.remove('hidden')
+  for (let i = 0; i < swiperWrapperChildren.length - 1; i++) {
+    swiperWrapperChildren[i].classList.remove('hidden')
+    swiperWrapper.classList.remove('brands__list')
   }
 }
 
+// функция которая открывает или закрывает окно при 768 +
 let amountOfElements1 = function (count) {
-  if (brandsList.classList.contains('button-close')) {
-    brandsList.classList.add('button-open')
-    brandsList.classList.remove('button-close')
+  if (swiperWrapper.classList.contains('button-close')) {
+    swiperWrapper.classList.add('button-open')
+    swiperWrapper.classList.remove('button-close')
 
     for (let i = 0; i < hiddenBrand.length; i++) {
       hiddenBrand[i].classList.remove('hidden')
       brandsButtonText.textContent = 'Скрыть'
     }
   } else {
-    brandsList.classList.add('button-close')
-    brandsList.classList.remove('button-open')
+    swiperWrapper.classList.add('button-close')
+    swiperWrapper.classList.remove('button-open')
 
     for (let i = count; i < hiddenBrand.length; i++) {
       hiddenBrand[i].classList.add('hidden')
@@ -104,6 +102,7 @@ let amountOfElements1 = function (count) {
   }
 }
 
+// при нажатии на кнопку выбирает количество видимых элементов
 button.addEventListener('click', function () {
   if (media768.matches && !media1120.matches) {
     amountOfElements1(6)
@@ -112,6 +111,7 @@ button.addEventListener('click', function () {
   }
 })
 
+// при нажатии на кнопку переворачивается иконка
 button.addEventListener('click', function () {
   if (icon.classList.contains('button-not-rotate')) {
     icon.classList.add('button-rotate')
@@ -121,7 +121,6 @@ button.addEventListener('click', function () {
     icon.classList.remove('button-rotate')
   }
 })
-
 
 let mySwiper = new Swiper('.swiper2', {
   // Optional parameters
@@ -148,17 +147,21 @@ let mySwiper = new Swiper('.swiper2', {
   }
 })
 
+const swiperTechContainer = document.querySelector('.swiper2')
+const swiperTechWrapper = swiperTechContainer.querySelector('.swiper-wrapper')
+const swiperPaginationTech = document.querySelector('.swiper-pagination2')
+
+// убираем свайпер у tech
 if (!mediaQuery.matches) {
   mySwiper.destroy()
-  brandsList.classList.remove('swiper')
-  brandsList.classList.remove('brands__list')
-  divSwiperWrapper.classList.remove('swiper-wrapper')
-  divSwiperWrapper.classList.add('brands__list')
-swiperPagination2.classList.add('hidden');
+  swiperTechContainer.classList.remove('swiper2')
+  swiperTechContainer.classList.remove('brands__list')
+  swiperTechWrapper.classList.remove('swiper-wrapper')
+  swiperTechWrapper.classList.add('brands__list')
+  swiperPaginationTech.classList.add('hidden')
 
   for (let elem of brand) {
     elem.classList.add('brand')
     elem.classList.remove('swiper-slide')
   }
 }
-

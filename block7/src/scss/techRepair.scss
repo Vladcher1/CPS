@@ -1,6 +1,6 @@
 @media (min-width: 767.95px) {
   .tech-repair {
-   border-top: 2px solid #D9FFF5;
+    border-top: 2px solid #d9fff5;
     .brands__list {
       list-style: none;
     }
@@ -18,33 +18,34 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px){
-.tech-repair{
-  display:flex;
-  flex-direction: column;
-  
-}
-.tech-container{
-  list-style: none;
-}
-.swiper-pagination2{
-  text-align: center;
-}
-
-.block{
-  flex-direction: column;
-  width:260px;
-  height:200px;
-  background-color: white;
-}
-.block-container{
-  flex-direction: row;
-  flex-wrap: nowrap;
-  .block{
+@media (min-width: 320px) and (max-width: 767px) {
+  .tech-repair {
+    display: flex;
     flex-direction: column;
-    width:260px;
-    height:200px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  .tech-container {
+    list-style: none;
+  }
+  .swiper-pagination2 {
+    text-align: center;
+  }
+
+  .block {
+    flex-direction: column;
+    width: 260px;
+    height: 200px;
     background-color: white;
   }
-}
+  .block-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    .block {
+      flex-direction: column;
+      width: 260px;
+      height: 200px;
+      background-color: white;
+    }
+  }
 }
