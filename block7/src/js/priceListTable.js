@@ -61,29 +61,29 @@ if (mediaQuery.matches) {
      
   }
   //   }
-}
+// }
 
-let mySwiperPrice = new Swiper('.swiperPrice', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  slidesPerView: 'auto',
-  spaceBetween: 16,
+// let mySwiperPrice = new Swiper('.swiperPrice', {
+//   // Optional parameters
+//   direction: 'horizontal',
+//   loop: true,
+//   slidesPerView: 'auto',
+//   spaceBetween: 16,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination2',
-    clickable: true
-  },
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination2',
+//     clickable: true
+//   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev'
+//   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar'
-  }
-})
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar'
+//   }
+// })
