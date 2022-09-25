@@ -8,6 +8,7 @@ import './modalsOn.js'
 import './openTechRepair.js'
 import '../scss/techRepair.scss'
 import './menuOn.js'
+import './priceListTable.js'
 
 let swiper = new Swiper('.swiper', {
   // Optional parameters
