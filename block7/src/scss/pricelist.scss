@@ -6,7 +6,7 @@
   }
 }
 // заголовок таблицы прайслист
-.block {
+.price__table-title {
   display: flex;
   flex-direction: row;
   height: 16px;
@@ -15,26 +15,26 @@
   margin-left: 0;
   margin-right: 0;
   color: #7e7e82;
-  .block-name {
+  .table-title__name {
     width: 494px;
     margin-left: 56px;
     vertical-align: bottom;
   }
-  .block-price {
+  .table-title__price {
     width: 175px;
   }
-  .block-time {
+  .table-title__time {
     width: 111px;
   }
 
-  .order-button {
+  .table-title__order-button{
     width: 140px;
     margin-left: 24px;
   }
 }
 
 // содержимое таблицы прайслист
-.block-container {
+.table-container {
   display: flex;
   flex-direction: column;
   height: 324px;
@@ -45,7 +45,7 @@
   margin-left: 32px;
   margin-right: 32px;
 
-  .block {
+  .price__product {
     display: flex;
     flex-direction: row;
     height: 64px;
@@ -54,23 +54,23 @@
     margin-right: 0;
     color: #1b1c21;
 
-    .block-name {
+    .product__name {
       width: 494px;
       margin-left: 24px;
       margin-top: 23px;
     }
-    .block-price {
+    .product__price {
       width: 175px;
       margin-left: 24px;
       margin-top: 23px;
     }
-    .block-time {
+    .product__time {
       width: 111px;
       margin-left: 24px;
       margin-top: 23px;
     }
 
-    .order-button {
+    .product__order-button {
       width: 140px;
       margin-left: 24px;
       margin-top: auto;
@@ -111,29 +111,29 @@
   body {
     font-size: 14px;
   }
-  .block {
+  .price__table-title {
     height: 32px;
     margin: 0 24px;
     box-sizing: content-box;
     font-size: 14px;
 
-    .block-name {
+    .table-title__name {
       margin-left: 16px;
       flex-shrink: 1;
       min-width: 348px;
     }
-    .block-price {
+    .table-title__price {
       flex-shrink: 1;
       margin-left: 16px;
       min-width: 74px;
     }
-    .block-time {
+    .table-title__time {
       margin-left: 0;
       flex-shrink: 0;
       margin-left: 22px;
       min-width: 81px;
     }
-    .order-button {
+    .table-title__order-button {
       margin: 0 16px 0 16px;
       padding: 0;
       width: 140px;
@@ -141,35 +141,35 @@
     }
   }
 
-  .block-container {
+  .table-container {
     min-width: 740px;
     box-sizing: content-box;
     margin-right: 24px;
     margin-left: 24px;
     font-size: 14px;
 
-    .block {
+    .price__product {
       height: 64px;
       margin: 0;
       box-sizing: content-box;
 
-      .block-name {
+      .product__name {
         margin-left: 16px;
         flex-shrink: 1;
         min-width: 348px;
       }
-      .block-price {
+      .product__price {
         flex-shrink: 1;
         margin-left: 16px;
         min-width: 74px;
       }
-      .block-time {
+      .product__time {
         margin-left: 0;
         flex-shrink: 0;
         margin-left: 22px;
         min-width: 81px;
       }
-      .order-button {
+      .product__order-button{
         margin: 0 16px 0 16px;
         padding: 0;
         visibility: visible;
@@ -196,19 +196,19 @@
 }
 
 @media (max-width: 767.95px) {
-  .block {
+  .price__table-title{
     display: flex;
     flex-direction: column;
     width: 260px;
     height: 200px;
     background-color: white;
   }
-  .block-container {
+  .table-container {
     height: 200px;
     flex-direction: row;
     flex-wrap: nowrap;
 
-    .block {
+    .price__product {
       flex-direction: column;
       width: 260px;
       height: 200px;
@@ -216,8 +216,8 @@
     }
   }
 
-  .block-container {
-    .block {
+  .table-container {
+    .price__product {
       margin:0;
       justify-content: center;
       .block-title-name {
@@ -230,12 +230,28 @@
             margin-bottom: 4px;
       }
 
-      .block-name {
+      .product__name{
         margin: 0;
         margin-left: 16px;
         font-size: 14px;
       }
+      .product__price{
+        margin: 0;
+    margin-left: 16px;
+    font-size: 14px;
+      }
 
+      .product__time{
+        margin: 0;
+    margin-left: 16px;
+    font-size: 14px;
+      }
+
+      .product__order-button{
+        position:relative;
+        top: -27px;
+        right:-80px;
+      }
       .block-title-price {
         width: 126px;
         font-size: 14px;
@@ -245,7 +261,7 @@
         color: #7e7e82;
             margin-bottom: 4px;
       }
-      .block-price {
+      .table-title__price {
         margin: 0;
         margin-left: 16px;
         font-size: 14px;
@@ -260,13 +276,13 @@
         color: #7e7e82;
             margin-bottom: 4px;
       }
-      .block-time {
+      .table-title__time {
         margin: 0;
         margin-left: 16px;
         font-size: 14px;
       }
 
-      .order-button{
+      .table-title__order-button{
         position:relative;
         top: -27px;
         right:-80px;

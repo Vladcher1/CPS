@@ -1,17 +1,17 @@
 const priceContainer = document.querySelector('.price')
-const blockTitle = priceContainer.querySelector('.block')
-const blockContainer = priceContainer.querySelector('.block-container')
-const block = blockContainer.querySelector('.block')
-const blocks = blockContainer.querySelectorAll('.block')
-const blockNameTitle = blockTitle.querySelector('.block-name')
-const blockPriceTitle = blockTitle.querySelector('.block-price')
-const blockTimeTitle = blockTitle.querySelector('.block-time')
+const tableTitle = priceContainer.querySelector('.price__table-title')
+const tableContainer = priceContainer.querySelector('.table-container')
+const product = tableContainer.querySelector('.price__product')
+const products = tableContainer.querySelectorAll('.price__product')
+const tableTitleName = tableTitle.querySelector('.table-title__name')
+const tableTitlePrice = tableTitle.querySelector('.table-title__price')
+const tableTitleTime = tableTitle.querySelector('.table-title__time')
 
-const blocksName = blockContainer.querySelectorAll('.block-name')
-const blocksPrice = blockContainer.querySelectorAll('.block-price')
-const blocksTime = blockContainer.querySelectorAll('.block-time')
+const productsName = tableContainer.querySelectorAll('.product__name')
+const productsPrice = tableContainer.querySelectorAll('.product__price')
+const productsTime = tableContainer.querySelectorAll('.product__time')
 const mediaQuery = window.matchMedia('(max-width: 767px)')
-const dividers = blockContainer.querySelectorAll('.block-divider')
+const dividers = tableContainer.querySelectorAll('.block-divider')
 
 // console.log(blocksName)
 // нужно вставить в каждый блок внутри блок контейнера все три элемента из блока снаружи
@@ -33,14 +33,14 @@ if (mediaQuery.matches) {
   divTime.innerHTML = 'Срок'
 
   // скрываю первый блок вне контейнера
-  blockTitle.classList.add('hidden')
+  tableTitle.classList.add('hidden')
   for (let divider of dividers) {
     divider.classList.add('hidden')
   }
 
   // ставлю новые дивы перед нужными блоками
 
-  for (let i = 0; i < blocks.length -1; i++) {
+  for (let i = 0; i < products.length -1; i++) {
     //  for (let element of blocks) {
 
       const divName = document.createElement('div')
@@ -55,38 +55,35 @@ if (mediaQuery.matches) {
       divTime.className = 'block-title-time'
       divTime.innerHTML = 'Срок'
 
-    blocksName[i].before(divName)
-    blocksPrice[i].before(divPrice)
-     blocksTime[i].before(divTime)
+    productsName[i].before(divName)
+    productsPrice[i].before(divPrice)
+     productsTime[i].before(divTime)
      
   }
   //   }
 }
 
-// let mySwiper2 = new Swiper('.swiper3', {
-//   // Optional parameters
-//   direction: 'horizontal',
-//   loop: true,
-//   slidesPerView: 'auto',
-//   spaceBetween: 16,
+let mySwiperPrice = new Swiper('.swiperPrice', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 16,
 
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination3',
-//     clickable: true
-//   },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination2',
+    clickable: true
+  },
 
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev'
-//   },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
 
-//   // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar'
-//   }
-// })
-
-console.log(blocks[1])
-console.log(blocksName)
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar'
+  }
+})
