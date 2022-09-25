@@ -7,14 +7,19 @@ const blockNameTitle = blockTitle.querySelector('.block-name')
 const blockPriceTitle = blockTitle.querySelector('.block-price')
 const blockTimeTitle = blockTitle.querySelector('.block-time')
 
-const blockName = blockContainer.querySelector('.block-name')
-const blockPrice = blockContainer.querySelector('.block-price')
-const blockTime = blockContainer.querySelector('.block-time')
+const blocksName = blockContainer.querySelectorAll('.block-name')
+const blocksPrice = blockContainer.querySelectorAll('.block-price')
+const blocksTime = blockContainer.querySelectorAll('.block-time')
 const mediaQuery = window.matchMedia('(max-width: 767px)')
+const dividers = blockContainer.querySelectorAll('.block-divider')
+
+// console.log(blocksName)
 // нужно вставить в каждый блок внутри блок контейнера все три элемента из блока снаружи
 
 if (mediaQuery.matches) {
-   // создаю дивы с тайтлами
+  // создаю дивы с тайтлами
+
+  // for (let i = 0; i < blocks.length - 1; i++) {
   const divName = document.createElement('div')
   divName.className = 'block-title-name'
   divName.innerHTML = 'Ремонтные услуги'
@@ -27,33 +32,36 @@ if (mediaQuery.matches) {
   divTime.className = 'block-title-time'
   divTime.innerHTML = 'Срок'
 
-   // скрываю первый блок вне контейнера
+  // скрываю первый блок вне контейнера
   blockTitle.classList.add('hidden')
+  for (let divider of dividers) {
+    divider.classList.add('hidden')
+  }
 
-   // ставлю новые дивы перед нужными блоками
+  // ставлю новые дивы перед нужными блоками
 
-   for (let i = 0; i < blocks.length; i++) {
-   // for (let element of blocks) {
+  for (let i = 0; i < blocks.length -1; i++) {
+    //  for (let element of blocks) {
 
-   //  const divName = document.createElement('div')
-   //  divName.className = 'block-title-name'
-   //  divName.innerHTML = 'Ремонтные услуги'
+      const divName = document.createElement('div')
+      divName.className = 'block-title-name'
+      divName.innerHTML = 'Ремонтные услуги'
 
-   //  const divPrice = document.createElement('div')
-   //  divPrice.className = 'block-title-price'
-   //  divPrice.innerHTML = 'Цена'
+      const divPrice = document.createElement('div')
+      divPrice.className = 'block-title-price'
+      divPrice.innerHTML = 'Цена'
 
-   //  const divTime = document.createElement('div')
-   //  divTime.className = 'block-title-time'
-   //  divTime.innerHTML = 'Срок'
+      const divTime = document.createElement('div')
+      divTime.className = 'block-title-time'
+      divTime.innerHTML = 'Срок'
 
-      blockName.before(divName)
-      blockPrice.before(divPrice)
-      blockTime.before(divTime)
-   // }
-   }
+    blocksName[i].before(divName)
+    blocksPrice[i].before(divPrice)
+     blocksTime[i].before(divTime)
+     
+  }
+  //   }
 }
-
 
 // let mySwiper2 = new Swiper('.swiper3', {
 //   // Optional parameters
@@ -80,4 +88,5 @@ if (mediaQuery.matches) {
 //   }
 // })
 
-console.log(blocks.length)
+console.log(blocks[1])
+console.log(blocksName)
