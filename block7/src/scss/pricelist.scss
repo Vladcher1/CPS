@@ -27,7 +27,7 @@
     width: 111px;
   }
 
-  .table-title__order-button{
+  .table-title__order-button {
     width: 140px;
     margin-left: 24px;
   }
@@ -169,7 +169,7 @@
         margin-left: 22px;
         min-width: 81px;
       }
-      .product__order-button{
+      .product__order-button {
         margin: 0 16px 0 16px;
         padding: 0;
         visibility: visible;
@@ -196,11 +196,11 @@
 }
 
 @media (max-width: 767.95px) {
-  .price__nds-text{
+  .price__nds-text {
     margin-left: 16px;
-    margin-right:16px;
+    margin-right: 16px;
   }
-  .price__table-title{
+  .price__table-title {
     display: flex;
     flex-direction: column;
     width: 260px;
@@ -211,9 +211,10 @@
     height: 200px;
     flex-direction: row;
     flex-wrap: nowrap;
-
+    width: 200px;
     .price__product {
       flex-direction: column;
+      justify-content: start;
       width: 260px;
       height: 200px;
       background-color: white;
@@ -222,8 +223,7 @@
 
   .table-container {
     .price__product {
-      margin:0;
-      justify-content: center;
+      margin: 0;
       border-radius: 5px;
       .block-title-name {
         width: 126px;
@@ -232,10 +232,10 @@
         margin-top: 16px;
         vertical-align: bottom;
         color: #7e7e82;
-            margin-bottom: 4px;
+        margin-bottom: 4px;
       }
 
-      .product__name{
+      .product__name {
         margin: 0;
         margin-left: 16px;
         margin-right: 16px;
@@ -243,23 +243,22 @@
         box-sizing: border-box;
         max-width: fit-content;
       }
-      .product__price{
+      .product__price {
         margin: 0;
-    margin-left: 16px;
-    font-size: 14px;
-
+        margin-left: 16px;
+        font-size: 14px;
       }
 
-      .product__time{
+      .product__time {
         margin: 0;
-    margin-left: 16px;
-    font-size: 14px;
+        margin-left: 16px;
+        font-size: 14px;
       }
 
-      .product__order-button{
-        position:relative;
-        top: -27px;
-        right:-80px;
+      .product__order-button {
+        position: absolute;
+        top: 147px;
+        right: 16px;
       }
       .block-title-price {
         width: 126px;
@@ -268,7 +267,7 @@
         margin-top: 16px;
         vertical-align: bottom;
         color: #7e7e82;
-            margin-bottom: 4px;
+        margin-bottom: 4px;
       }
       .table-title__price {
         margin: 0;
@@ -283,7 +282,7 @@
         margin-top: 16px;
         vertical-align: bottom;
         color: #7e7e82;
-            margin-bottom: 4px;
+        margin-bottom: 4px;
       }
       .table-title__time {
         margin: 0;
@@ -291,10 +290,10 @@
         font-size: 14px;
       }
 
-      .table-title__order-button{
-        position:relative;
-        top: -27px;
-        right:-80px;
+      .table-title__order-button {
+        position: absolute;
+        top: 147px;
+        right: 16px;
       }
     }
   }
@@ -307,13 +306,14 @@
   width: 111px;
 }
 
-.swiper-pagination-price{
+.swiper-pagination-price {
   text-align: center;
-    transition: .3s opacity;
-    transform: translate3d(0,0,0);
-    z-index: 10;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  margin-top: 16px;
 }
 
-.swiper-price{
-      overflow: hidden;
+.swiper-price {
+  overflow: hidden;
 }

@@ -61,7 +61,7 @@ if (mediaQuery.matches) {
   let mySwiperPrice = new Swiper('.swiper-price', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    loop: false,
     slidesPerView: 'auto',
     spaceBetween: 16,
 

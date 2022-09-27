@@ -13,7 +13,7 @@ import './priceListTable.js'
 let swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
   slidesPerView: 'auto',
   spaceBetween: 16,
 
@@ -126,7 +126,7 @@ button.addEventListener('click', function () {
 let swiperTech = new Swiper('.swiper2', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
   slidesPerView: 'auto',
   spaceBetween: 16,
 

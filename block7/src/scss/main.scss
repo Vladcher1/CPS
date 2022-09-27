@@ -318,10 +318,10 @@ ul {
   .brands-button {
     display: none;
   }
-
-  // .second-title:last-child{
-  //   display:none;
-  // }
+.brands{
+  border-top: #b8ffec 2px solid;
+  margin-top: 32px;
+}
 }
 
 /* 768px  на планшеты */
@@ -642,3 +642,4 @@ ul {
 .hidden {
   display: none !important;
 }
+

@@ -24,12 +24,15 @@
     flex-direction: column;
     flex-wrap: nowrap;
     overflow: hidden;
+    border-top: #d9fff5 2px solid;
+    margin-top: 16px;
   }
   .tech-container {
     list-style: none;
   }
   .swiper-pagination2 {
     text-align: center;
+    margin-bottom: 16px;
   }
 
 }

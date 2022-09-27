@@ -15,7 +15,7 @@
   }
 }
 
-@media (min-width: 767.95px) {
+@media (min-width: 767.96px) {
   .page-footer {
     justify-content: space-between;
     .copyright-year {
@@ -31,4 +31,32 @@
       flex-shrink: 0;
     }
   }
+}
+
+@media (max-width: 768.95px){
+  .page-footer {
+    font-size: 14px;
+    flex-direction: column;
+    height: fit-content;
+    text-align: center;  
+    
+    .copyright-information{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .copyright-policy{
+    margin-top: 16px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .copyright-year{
+    margin-top: 16px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  }
+
+
 }
