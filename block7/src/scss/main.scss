@@ -334,7 +334,7 @@ ul {
 
   .page-header {
     padding: 14px;
-padding-left: 0;
+    padding-left: 0;
     padding-right: 0;
     &__icon-call {
       order: -2;
@@ -596,7 +596,7 @@ padding-left: 0;
     padding: 0;
   }
 
-  .brand-list-title.title{
+  .brand-list-title.title {
     margin-left: 32px;
     margin-bottom: 24px !important;
   }
@@ -667,6 +667,12 @@ padding-left: 0;
       margin-left: 16px !important;
     }
   }
+}
 
-  
+@media (min-width: 1440px) {
+  body {
+    width: 1440px;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
 }
