@@ -326,7 +326,7 @@ ul {
 
 /* 768px  на планшеты */
 
-@media (min-width: $phonewidth) and (max-width: $tabletwidth) {
+@media (min-width: $phonewidth) and (max-width: 1439.95px) {
   body {
     margin-right: 16px;
     background-color: $backgroundcolor;
@@ -463,7 +463,7 @@ padding-left: 0;
 
 /* 1120px  на компьютеры  */
 
-@media (min-width: 1120px) {
+@media (min-width: 1439.95px) {
   .page-header {
     background-color: $backgroundcolor;
     border: none;
@@ -655,7 +655,7 @@ padding-left: 0;
   padding-top: 16px;
 }
 
-@media (max-width: 768.95px) {
+@media (max-width: 767.95px) {
   .title {
     height: 80px;
     margin-bottom: 0;
