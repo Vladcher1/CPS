@@ -334,7 +334,8 @@ ul {
 
   .page-header {
     padding: 14px;
-
+padding-left: 0;
+    padding-right: 0;
     &__icon-call {
       order: -2;
       margin-right: 10px;
@@ -432,7 +433,7 @@ ul {
   }
 
   .img-styles1 {
-    width: 320px;
+    width: 360px;
     border-radius: 2.5%;
   }
 
@@ -594,6 +595,11 @@ ul {
   .second-title {
     padding: 0;
   }
+
+  .brand-list-title.title{
+    margin-left: 32px;
+    margin-bottom: 24px !important;
+  }
 }
 
 .brands {
@@ -661,4 +667,6 @@ ul {
       margin-left: 16px !important;
     }
   }
+
+  
 }
