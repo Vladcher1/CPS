@@ -237,6 +237,14 @@ height: auto;
 
 @media (min-width: 320px) and (max-width: 767px){
 
-
+  .page-header{
+    padding-right: 0;
+    padding-left:0;
+  }
+.brands__list{
+      min-width: 95%;
+      margin-left: 16px;
+      margin-right: 16px;
+}
 }
 
